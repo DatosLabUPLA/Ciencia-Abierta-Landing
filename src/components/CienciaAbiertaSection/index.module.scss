@@ -1,0 +1,25 @@
+.section-main__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-block: 25px;
+    flex-direction: column;
+    border-top: 1px solid #B9B9B9;
+    .section__title {
+        margin: 0px;
+        font-size: 54px;
+        color: #0E9FE3;
+        max-width: 800px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .section-description__text {
+        width: 70%;
+        margin: 0px;
+        text-align: center;
+        margin-block: 15px;
+    }
+    .section-children__container {
+        width: 100%;
+    }
+}

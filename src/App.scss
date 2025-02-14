@@ -1,0 +1,12 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.main__container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+}

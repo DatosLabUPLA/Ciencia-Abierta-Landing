@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Transparencia, control, crítica y reproducibilidad",
+        "backgroundText": "hola",
+        "backgroundColor": "#4F71D3"
+    },
+    {
+        "name": "Igualdad de oportunidades",
+        "backgroundText": "hola",
+        "backgroundColor": "#EF5C99"
+    },
+    {
+        "name": "Responsabilidad, respeto y rendición de cuentas",
+        "backgroundText": "hola",
+        "backgroundColor": "#F28754"
+    },
+    {
+        "name": "Colaboración, participación e inclusión",
+        "backgroundText": "hola",
+        "backgroundColor": "#C6717C"
+    },
+    {
+        "name": "Flexibilidad",
+        "backgroundText": "hola",
+        "backgroundColor": "#947398"
+    },
+    {
+        "name": "Sostenibilidad",
+        "backgroundText": "hola",
+        "backgroundColor": "#4FBAE7"
+    }
+]

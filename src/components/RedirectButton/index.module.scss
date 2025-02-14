@@ -1,0 +1,37 @@
+.ciencia-abierta-redirect__button {
+    height: 51px;
+    width: 202px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 24px;
+    color: #0E9FE3;
+    font-weight: bold;
+    border-radius: 24px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    box-sizing: content-box;
+    transition: all 0.2s ease;
+    background-color: #D7EEFA;
+    border: 1px solid #459ec7;
+    box-shadow: 0px 10px 12px 0px rgba(223, 222, 222, 0.22);
+    &:hover {
+        opacity: 0.92;
+    }
+    &:active {
+        border-width: 2px;
+    }
+}
+
+.ciencia-abierta-redirect-section__button {
+    height: 48px;
+    width: 135px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0px 10px 12px 0px rgba(2, 2, 2, 0.22);
+    transition: all 0.2s ease;
+    &:hover {
+        opacity: 0.8;
+    }
+}
