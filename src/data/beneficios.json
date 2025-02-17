@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Transparencia <br/> y <br/> Calidad Científica",
+        "benefits": [
+            "Facilita la verificación y reproducibilidad de los estudios.",
+            "Permite una evaluación más inclusiva y menos sesgada.",
+            "Refuerza la integridad de la investigación, reduciendo el fraude científico."
+        ]
+    },
+    {
+        "name": "Accesibilidad <br/> e <br/> Inclusión Global",
+        "benefits": [
+            "Elimina barreras económicas y geográficas al conocimiento.",
+            "Reduce desigualdades en la producción y acceso a la ciencia.",
+            "Promueve la diversidad de voces y conocimientos en la investigación."
+        ]
+    },
+    {
+        "name": "Impacto Social <br/> y <br/> Cooperación Global",
+        "benefits": [
+            "Fomenta la confianza de la sociedad en la ciencia.",
+            "Facilita la colaboración internacional en investigación.",
+            "Permite el uso del conocimiento abierto en la toma de decisiones públicas."
+        ]
+    },
+    {
+        "name": "Impulso a la Innovación <br/> y <br/> el Desarrollo",
+        "benefits": [
+            "Acelera el avance científico al permitir la reutilización de datos.",
+            "Favorece la economía del conocimiento y el desarrollo tecnológico.",
+            "Reduce costos en la investigación al evitar duplicaciones innecesarias."
+        ]
+    }
+]

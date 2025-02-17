@@ -1,0 +1,7 @@
+ .recursos-main__container {
+     width: 100%;
+    display: grid;
+    row-gap: 100px;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+ }

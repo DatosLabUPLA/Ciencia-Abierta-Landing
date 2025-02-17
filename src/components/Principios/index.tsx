@@ -1,12 +1,12 @@
 //Components
 import { IPrincipio } from "./interface";
+import PrincipioItem from "./PrincipioItem";
 
 //Styles
 import styles from "./index.module.scss";
 
 //Data
 import PrincipiosData from "../../data/principios.json";
-import PrincipioItem from "./PrincipioItem";
 
 const Principios = () => {
     return (
@@ -14,9 +14,11 @@ const Principios = () => {
             {
                 PrincipiosData.map(({name, backgroundText, backgroundColor}: IPrincipio) => 
                     <PrincipioItem 
+                        key = {name}
                         name = {name} 
                         backgroundText = {backgroundText} 
-                        backgroundColor = {backgroundColor}/>
+                        backgroundColor = {backgroundColor}
+                    />
                 )
             }
         </div>

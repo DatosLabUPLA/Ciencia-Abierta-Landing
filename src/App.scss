@@ -4,9 +4,9 @@
 }
 
 .main__container{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   display: flex;
-  overflow-y: auto;
+  min-height: 100vh;
+  overflow-y: inherit;
   flex-direction: column;
 }

@@ -1,0 +1,9 @@
+.beneficios-main__container {
+    width: 100%;
+    display: grid;
+    row-gap: 100px;
+    column-gap: 50px;
+    margin-bottom: 35px;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
