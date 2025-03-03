@@ -45,9 +45,16 @@
                     font-weight: bold;
                 }
                 .ciencia-abierta-definicion__text {
+                    max-width: 90%;
                     font-size: 20px;
                     margin-block: 40px;
-                    max-width: 90%;
+                }
+                .ciencia-abierta-referencia_link {
+                    display: block;
+                    font-size: 12px;
+                    margin-top: 20px;
+                    color: #707070;
+                    text-decoration: none;
                 }
             }
             .ciencia-abierta-definicion__image {

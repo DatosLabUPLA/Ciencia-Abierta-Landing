@@ -15,15 +15,15 @@ import LogoUpla from "../../assets/logo_upla.png";
 const Footer = () => {
     return (
         <div className = {styles["footer-main__container"]}>
-            <img src = {LogoUpla} className = {styles["footer__image"]}/>
-            <div className = {styles["pages-main__container"]}>
+            <img data-aos = "fade-right" src = {LogoUpla} className = {styles["footer__image"]}/>
+            <div data-aos = "fade-down" className = {styles["pages-main__container"]}>
                 <h1 className = {styles["pages__title"]}>Visítanos también en</h1>
                 <div className = {styles["pages__container"]}>
                     <a target = "_blank" href = "https://www.upla.cl/portada/">- Página UPLA</a>
                     <a target = "_blank" href = "https://www.upla.cl/noticias/">- Noticias UPLA</a>
                 </div>
             </div>
-            <div className = {styles["social-networks-main__container"]}>
+            <div data-aos = "fade-down" className = {styles["social-networks-main__container"]}>
                 <h1 className = {styles["social-networks__title"]}>Nuestras redes sociales</h1>
                 <div className = {styles["social-networks__container"]}>
                     <a target = "_blank" href = "https://www.instagram.com/upla_comunica/" style = {{"backgroundColor": "#ea2c59"}}>

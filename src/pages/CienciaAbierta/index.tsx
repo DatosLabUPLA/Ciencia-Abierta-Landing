@@ -35,6 +35,11 @@ const CienciaAbierta = () => {
                             text = "Saber más"
                             type = "section"
                         />
+                        <a 
+                            target = "_blank"
+                            href = "https://doi.org/10.54677/YDOG4702"
+                            className = {styles["ciencia-abierta-referencia_link"]}
+                        >UNESCO. (2021). Recomendación de la UNESCO sobre la Ciencia Abierta (Documento de programa o de reunión No. SC-PCB-SPP/2021/OS/UROS).</a>
                     </div>
                     <img src = {CienciaAbiertaImage} className = {styles["ciencia-abierta-definicion__image"]}/>
                 </div>
