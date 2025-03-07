@@ -51,7 +51,8 @@
     }
     &:hover {
         z-index: 1;
-        transform: translateY(-10px);
+        transition: all 0.3s ease !important;
+        transform: translateY(-10px) !important;
         .descripcion-repositorio__text {
             visibility: visible;
         }

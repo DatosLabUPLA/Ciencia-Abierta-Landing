@@ -15,7 +15,7 @@ const RepositorioItem = ({
             target = "_blank" 
             href = {externalURL}
             className = {styles["repositorio-main__container"]}
-    
+            data-aos = "zoom-in-up"
         >
             <img 
                 src = {imagePath}
