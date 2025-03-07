@@ -1,26 +1,26 @@
 [
     {
         "name": "Repositorios Abiertos",
+        "path": "/repositorios",
         "imagePath": "repositorios.png",
-        "externalURL": "https://courageous-bombolone-7e5120.netlify.app/ciencia-abierta",
         "description": "Plataformas para compartir artículos y publicaciones científicas en acceso abierto."
     },
     {
         "name": "Datos de Investigación Abiertos",
+        "path": "/repositorios",
         "imagePath": "/datos.png",
-        "externalURL": "https://courageous-bombolone-7e5120.netlify.app/ciencia-abierta",
         "description": "Recursos para compartir y reutilizar datos científicos."
     },
     {
         "name": "Software y Herramientas Abiertas",
+        "path": "/repositorios",
         "imagePath": "software.png",
-        "externalURL": "https://courageous-bombolone-7e5120.netlify.app/ciencia-abierta",
         "description": "Programas de código abierto para la investigación."
     },
     {
         "name": "Licencias Abiertas",
+        "path": "/repositorios",
         "imagePath": "licencias.png",
-        "externalURL": "https://courageous-bombolone-7e5120.netlify.app/ciencia-abierta",
         "description": "Herramientas para compartir contenido legalmente."
     }
 ]

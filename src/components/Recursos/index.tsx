@@ -12,12 +12,12 @@ const Recursos = () => {
     return (
         <div className = {styles["recursos-main__container"]}>
             {
-                RecursosData.map(({name, imagePath, externalURL, description}: IRecurso) => 
+                RecursosData.map(({name, path, imagePath, description}: IRecurso) => 
                     <RecrusoItem
                         key = {name}
+                        path = {path}
                         name = {name}
                         imagePath = {imagePath}
-                        externalURL = {externalURL}
                         description = {description}
                     />
                 )

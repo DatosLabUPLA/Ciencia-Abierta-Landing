@@ -1,32 +1,32 @@
 [
     {
         "name": "Transparencia, control, crítica y reproducibilidad",
-        "backgroundText": "hola",
+        "backgroundText": "Ciencia abiertamente disponible, accesible y reutilizable, garantizando que los resultados de la investigación (datos, publicaciones, metodologías) sean compartibles y bajo altos estándares de calidad.",
         "backgroundColor": "#4F71D3"
     },
     {
         "name": "Igualdad de oportunidades",
-        "backgroundText": "hola",
+        "backgroundText": "Igualdad de acceso al conocimiento, tecnología e infraestructura, independiente del origen o circunstancias del investigador o investigadora, garantizando la inclusión y reduciendo las desigualdades.",
         "backgroundColor": "#EF5C99"
     },
     {
         "name": "Responsabilidad, respeto y rendición de cuentas",
-        "backgroundText": "hola",
+        "backgroundText": "Investigar con responsabilidad, especialmente si se utilizan fondos públicos, considerando posibles conflictos de interés, integridad intelectual, impacto social y ecológico.",
         "backgroundColor": "#F28754"
     },
     {
         "name": "Colaboración, participación e inclusión",
-        "backgroundText": "hola",
+        "backgroundText": "Garantizar colaboraciones científicas sin limitaciones geográficas, idiomáticas o de recursos, y fomentar la inclusión de comunidades diversas para abordar problemas sociales claves.",
         "backgroundColor": "#C6717C"
     },
     {
         "name": "Flexibilidad",
-        "backgroundText": "hola",
+        "backgroundText": "Reconocer que no existe una única manera de practicar la ciencia abierta y fomentar diferentes vías para practicarla, manteniendo sus valores fundamentales.",
         "backgroundColor": "#947398"
     },
     {
         "name": "Sostenibilidad",
-        "backgroundText": "hola",
+        "backgroundText": "Investigar eficientemente para maximizar su impacto, aprovechando recursos, servicios y modelos de financiación para un crecimiento sostenible en beneficio de generaciones futuras.",
         "backgroundColor": "#4FBAE7"
     }
 ]

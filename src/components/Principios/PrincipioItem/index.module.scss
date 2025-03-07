@@ -25,6 +25,8 @@
         box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.6);
     }
     .principio-back__container {
+        font-size: 15px;
+        padding-inline: 30px;
         transform: rotateY(180deg);
     }
     
@@ -35,5 +37,9 @@
         .principio-back__container {
             transform: rotateY(0deg);
         }
+    }
+    
+    @media (min-width: 2000px) {
+        
     }
 }

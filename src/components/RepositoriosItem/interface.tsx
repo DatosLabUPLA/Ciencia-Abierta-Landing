@@ -1,6 +1,6 @@
-export interface IRecurso {
+export interface IRepositorioItem {
     name: string;
-    path: string;
     imagePath: string;
+    externalURL: string;
     description: string;
 }
