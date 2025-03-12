@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Free Software Foundation (FSF)",
+        "imagePath": "fsf.png",
+        "externalURL": "https://www.fsf.org/",
+        "description": "Fundación dedicada a la promoción del software libre y los derechos de los usuarios sobre la tecnología. Apoya el desarrollo de software bajo licencias libres, como la GPL, y defiende principios como la libertad de uso, modificación y distribución del mismo."
+    },
+    {
+        "name": "GitHub",
+        "imagePath": "github.png",
+        "externalURL": "https://github.com/",
+        "description": "Plataforma de desarrollo colaborativo basada en Git, utilizada para alojar y gestionar proyectos de software. Permite control de versiones, contribuciones abiertas y automatización de flujos de trabajo, siendo un pilar fundamental en el ecosistema del código abierto."
+    },
+    {
+        "name": "Open Source Initiative (OSI)",
+        "imagePath": "osi.png",
+        "externalURL": "https://opensource.org/",
+        "description": "Organización sin fines de lucro que promueve y protege el software de código abierto mediante la certificación de licencias y la defensa de principios abiertos. Es responsable de definir el concepto de Open software y garantizar su adopción global."
+    },
+    {
+        "name": "Software Freedom Conservancy",
+        "imagePath": "sfconservancy.png",
+        "externalURL": "https://sfconservancy.org/",
+        "description": "Organización que brinda apoyo legal, administrativo y financiero a proyectos de software libre y de código abierto. Facilita la sostenibilidad de iniciativas tecnológicas comunitarias, asegurando que operen bajo estructuras legales adecuadas."
+    }
+]

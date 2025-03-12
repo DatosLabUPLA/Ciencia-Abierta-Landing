@@ -1,19 +1,19 @@
-.repositorios-main__container {
-    width: 100%;
+.licencias-main__container {
+    width: 100vw;
     display: flex;
     font-size: 20px;
     margin-bottom: 35px;
     padding-inline: 100px;
     box-sizing: border-box;
     flex-direction: column;
-    .descripcion-repositorios__title, .ejemplos-repositorios__title {
+    .descripcion-licencias__title, .ejemplos-licencias__title {
         color: #0E9FE3;
         font-size: 50px;
     }
-    .descripcion-repositorios__text {
+    .descripcion-licencias__text {
         margin: 0;
     }
-    .ejemplos-repositorios__container {
+    .ejemplos-licencias__container {
         width: 100%;
         row-gap: 50px;
         display: grid;

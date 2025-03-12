@@ -7,19 +7,19 @@
     },
     {
         "name": "Datos de Investigación Abiertos",
-        "path": "/repositorios",
+        "path": "/datos-investigacion",
         "imagePath": "/datos.png",
         "description": "Recursos para compartir y reutilizar datos científicos."
     },
     {
         "name": "Software y Herramientas Abiertas",
-        "path": "/repositorios",
+        "path": "/software-y-herramientas",
         "imagePath": "software.png",
         "description": "Programas de código abierto para la investigación."
     },
     {
         "name": "Licencias Abiertas",
-        "path": "/repositorios",
+        "path": "/licencias",
         "imagePath": "licencias.png",
         "description": "Herramientas para compartir contenido legalmente."
     }

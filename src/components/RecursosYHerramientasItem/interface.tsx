@@ -1,4 +1,4 @@
-export interface IRepositorioItem {
+export interface IRecursosYHerramientasItem {
     name: string;
     imagePath: string;
     externalURL: string;

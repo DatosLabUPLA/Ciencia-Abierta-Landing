@@ -1,15 +1,15 @@
 //Interfaces
-import { IRepositorioItem } from "./interface";
+import { IRecursosYHerramientasItem } from "./interface";
 
 //Styles
 import styles from "./index.module.scss";
 
-const RepositorioItem = ({
+const RecursosYHerramientasItem = ({
     name,
     imagePath,
     externalURL,
     description 
-}: IRepositorioItem) => {
+}: IRecursosYHerramientasItem) => {
     return (
         <a 
             target = "_blank" 
@@ -27,4 +27,4 @@ const RepositorioItem = ({
     );
 }
 
-export default RepositorioItem;
+export default RecursosYHerramientasItem;

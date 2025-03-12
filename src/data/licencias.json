@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Creative Commons",
+        "imagePath": "creative_commons.png",
+        "externalURL": "https://creativecommons.org",
+        "description": "Es una organización sin fines de lucro que proporciona licencias estandarizadas para facilitar el acceso y reutilización de obras creativas y académicas. Sus licencias permiten a los autores definir permisos de uso, modificación y distribución, equilibrando derechos de autor y acceso abierto. Son ampliamente utilizadas en ciencia, educación y cultura digital para fomentar la difusión del conocimiento."
+    },
+    {
+        "name": "Creative Commons License Chooser",
+        "imagePath": "creative_commons_chooser.png",
+        "externalURL": "https://chooser-beta.creativecommons.org/",
+        "description": "Herramienta interactiva que ayuda a los creadores a seleccionar la licencia de Creative Commons más adecuada para compartir su trabajo. Proporciona una guía sencilla sobre los permisos y restricciones de cada licencia, facilitando la adopción de modelos de acceso abierto."
+    },
+    {
+        "name": "Copyleft Guide",
+        "imagePath": "copyleft_guide.png",
+        "externalURL": "https://copyleft.org/guide/",
+        "description": "Recurso educativo sobre el concepto de copyleft y su aplicación en licencias de software libre, como la GPL. Explica cómo garantizar que las obras derivadas mantengan la misma libertad de uso y modificación, promoviendo el acceso abierto y la colaboración."
+    }
+]
