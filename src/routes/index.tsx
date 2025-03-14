@@ -30,7 +30,7 @@ const Router = () => (
             <Route path = "/datos-investigacion" element = {DatosInvestigacion}/>
             <Route path = "/software-y-herramientas" element = {SoftwareYHerramientas}/>
             <Route path = "/licencias" element = {Licencias}/>
-            <Route path = "/" element = {<Navigate to = "/ciencia-abierta"/>}/>
+            <Route path = "*" element = {<Navigate to = "/ciencia-abierta"/>}/>
         </Routes>
     </BrowserRouter>
 );

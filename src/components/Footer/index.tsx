@@ -10,12 +10,12 @@ import {
 import styles from "./index.module.scss";
 
 //Images
-import LogoUpla from "../../assets/logo_upla.png";
+import LogoFooterUpla from "../../assets/logo_footer_upla.png";
 
 const Footer = () => {
     return (
         <div className = {styles["footer-main__container"]}>
-            <img data-aos = "fade-right" src = {LogoUpla} className = {styles["footer__image"]}/>
+            <img data-aos = "fade-right" src = {LogoFooterUpla} className = {styles["footer__image"]}/>
             <div data-aos = "fade-down" className = {styles["pages-main__container"]}>
                 <h1 className = {styles["pages__title"]}>Visítanos también en</h1>
                 <div className = {styles["pages__container"]}>
