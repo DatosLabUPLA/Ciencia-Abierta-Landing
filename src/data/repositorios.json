@@ -1,61 +1,61 @@
 [
     {
+        "name": "ANID",
+        "imagePath": "/repositorios/anid.png",
+        "externalURL": "https://repositorio.anid.cl/home",
+        "description": "Plataforma de Acceso Abierto que reúne la producción científica financiada por la Agencia Nacional de Investigación y Desarrollo de Chile (ANID). Contiene artículos, tesis, informes y otros documentos de investigación generados en proyectos apoyados por la agencia."
+    },
+    {
         "name": "arXiv",
-        "imagePath": "arXiv.png",
+        "imagePath": "/repositorios/arXiv.png",
         "externalURL": "https://arxiv.org/",
         "description": "Repositorio de preprints en física, matemáticas, informática y disciplinas afines, administrado por la Universidad de Cornell. Permite la difusión rápida de investigaciones antes de su revisión formal por pares."
     },
     {
+        "name": "CEPAL",
+        "imagePath": "/repositorios/cepal.png",
+        "externalURL": "https://repositorio.cepal.org/home",
+        "description": "Plataforma digital de la Comisión Económica para América Latina y el Caribe (CEPAL), donde se alojan documentos, informes y estudios sobre economía, desarrollo sostenible y políticas públicas en la región."
+    },
+    {
         "name": "Dialnet",
-        "imagePath": "dialnet.png",
+        "imagePath": "/repositorios/dialnet.png",
         "externalURL": "https://dialnet.unirioja.es/",
         "description": "Base de datos de documentación científica en español, especializada en ciencias sociales y humanidades. Ofrece acceso a artículos, tesis y documentos académicos de universidades e instituciones iberoamericanas."
     },
     {
         "name": "Directory of Open Access Journals (DOAJ)",
-        "imagePath": "doaj.png",
+        "imagePath": "/repositorios/doaj.png",
         "externalURL": "https://doaj.org/",
         "description": "Índice global que recopila revistas científicas de acceso abierto revisadas por pares, abarcando diversas disciplinas. Su objetivo es aumentar la visibilidad y la calidad de la producción científica accesible sin restricciones."
     },
     {
         "name": "Directory of Open Access Books (DOAB)",
-        "imagePath": "doab.png",
+        "imagePath": "/repositorios/doab.png",
         "externalURL": "https://www.doabooks.org",
         "description": "DOAB es un directorio que indexa libros académicos de acceso abierto revisados por pares. Su objetivo es mejorar la visibilidad y facilitar la difusión de monografías de calidad sin restricciones. Reúne publicaciones de diversas disciplinas, garantizando el acceso gratuito a contenidos científicos y académicos."
     },
     {
         "name": "Preprints.org",
-        "imagePath": "preprints.png",
+        "imagePath": "/repositorios/preprints.png",
         "externalURL": "https://www.preprints.org",
         "description": "Plataforma multidisciplinaria para la publicación de preprints, que permite a los investigadores compartir sus hallazgos antes de la revisión por pares. Fomenta la ciencia abierta y el acceso temprano al conocimiento."
     },
     {
         "name": "Redalyc",
-        "imagePath": "redalyc.png",
+        "imagePath": "/repositorios/redalyc.png",
         "externalURL": "https://www.redalyc.org",
         "description": "Sistema de información académica que indexa revistas científicas de Acceso Abierto en Iberoamérica. Su modelo promueve la publicación sin costos para autores ni lectores, priorizando la calidad editorial."
     },
     {
-        "name": "Repositorio ANID",
-        "imagePath": "anid.png",
-        "externalURL": "https://repositorio.anid.cl/home",
-        "description": "Plataforma de Acceso Abierto que reúne la producción científica financiada por la Agencia Nacional de Investigación y Desarrollo de Chile (ANID). Contiene artículos, tesis, informes y otros documentos de investigación generados en proyectos apoyados por la agencia."
-    },
-    {
-        "name": "Repositorio CEPAL",
-        "imagePath": "cepal.png",
-        "externalURL": "https://repositorio.cepal.org/home",
-        "description": "Plataforma digital de la Comisión Económica para América Latina y el Caribe (CEPAL), donde se alojan documentos, informes y estudios sobre economía, desarrollo sostenible y políticas públicas en la región."
-    },
-    {
         "name": "ROAD (Directory of Open Access Scholarly Resources)",
-        "imagePath": "road.png",
+        "imagePath": "/repositorios/road.png",
         "externalURL": "https://road.issn.org/",
         "description": "Servicio del ISSN que proporciona acceso a revistas, conferencias y otros recursos académicos en acceso abierto. Incluye información bibliográfica detallada y facilita la identificación de publicaciones científicas."
     },
     {
         "name": "Zenodo",
-        "imagePath": "zenodo.png",
+        "imagePath": "/repositorios/zenodo.png",
         "externalURL": "https://zenodo.org/",
         "description": "Repositorio de datos y documentos científicos desarrollado por el CERN, que permite a investigadores compartir publicaciones, conjuntos de datos y software con acceso abierto y preservación a largo plazo."
     }

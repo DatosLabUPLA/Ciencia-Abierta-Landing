@@ -2,25 +2,25 @@
     {
         "name": "Repositorios Abiertos",
         "path": "/repositorios",
-        "imagePath": "repositorios.png",
+        "imagePath": "/recursos/repositorios.png",
         "description": "Plataformas para compartir artículos y publicaciones científicas en acceso abierto."
     },
     {
         "name": "Datos de Investigación Abiertos",
         "path": "/datos-investigacion",
-        "imagePath": "/datos.png",
+        "imagePath": "/recursos/datos.png",
         "description": "Recursos para compartir y reutilizar datos científicos."
     },
     {
         "name": "Software y Herramientas Abiertas",
         "path": "/software-y-herramientas",
-        "imagePath": "software.png",
+        "imagePath": "/recursos/software.png",
         "description": "Programas de código abierto para la investigación."
     },
     {
         "name": "Licencias Abiertas",
         "path": "/licencias",
-        "imagePath": "licencias.png",
+        "imagePath": "/recursos/licencias.png",
         "description": "Herramientas para compartir contenido legalmente."
     }
 ]
