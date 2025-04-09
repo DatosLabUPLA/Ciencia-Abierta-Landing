@@ -1,11 +1,15 @@
 //Components
+import Accordion from "../../components/Accordion";
+import CreativeCommonsItem from "../../components/CreativeCommonsItem";
+import { ICreativeCommonsItem } from "../../components/CreativeCommonsItem/interface";
 import RecursosYHerramientasItem from "../../components/RecursosYHerramientasItem";
 
 //Styles
 import styles from "./index.module.scss";
 
 //Data
-import LicenciasData from "../../data/licencias.json"
+import LicenciasData from "../../data/licencias.json";
+import CreativeCommonsData from "../../data/creativeCommonsLicencias.json";
 
 const Licencias = () => {
     return (
@@ -28,8 +32,26 @@ const Licencias = () => {
                     )
                 }
             </div>
-            <h1 data-aos = "fade-right" className = {styles["creative-commons-licencias__title"]}>Las seis licencias Creative Commons</h1>
-
+            <h1 data-aos = "fade-right" className = {styles["creative-commons-licencias__title"]}>Tipos de Licencias Creative Commons</h1>
+            <div className = {styles["creative-commons-licencias__container"]}>
+                {
+                    CreativeCommonsData.map(({
+                        name,
+                        example,
+                        imagePath,
+                        description
+                    }: ICreativeCommonsItem) => 
+                        <Accordion sectionName = {name}>
+                            <CreativeCommonsItem 
+                                name = {name}
+                                example = {example}
+                                imagePath = {imagePath}
+                                description = {description}
+                            />
+                        </Accordion>
+                    )
+                }
+            </div>
         </div>
     );
 }

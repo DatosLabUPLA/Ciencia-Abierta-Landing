@@ -19,10 +19,15 @@
         row-gap: 50px;
         display: grid;
         justify-items: center;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .creative-commons-licencias__title {
         color: #0E9FE3;
         font-size: 35px;
+        margin-block: 40px;
+    }
+    .creative-commons-licencias__container {
+        display: flex;
+        flex-direction: column;
     }
 }
