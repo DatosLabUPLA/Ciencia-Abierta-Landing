@@ -1,0 +1,17 @@
+.creative-commons-item__container {
+    width: 100%;
+    padding: 2%;
+    color: black;
+    box-sizing: border-box;
+    .creative-commons-item-description__text {
+        margin-top: 0px;
+    }
+    .creative-commons-item__image {
+        width: 180px;
+        height: 65px;
+        border-radius: 2px;
+    }
+    h3 {
+        margin: 0px;
+    }
+}

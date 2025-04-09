@@ -1,0 +1,38 @@
+[
+    {
+        "name": "CC BY",
+        "imagePath": "/licencias/licenciasCreativeCommons/cc_by.png",
+        "description": "Permite cualquier uso de la obra (incluyendo comercial, no comercial y adaptaciones), siempre que se dé crédito al autor/a. Es considerada la licencia más abierta.",
+        "example": "Un/a fotógrafo/a sube imágenes a Internet con <strong>CC BY</strong>. Cualquiera puede usarlas en blogs, anuncios o libros, e incluso editarlas, siempre que mencionen la autoría del fotógrafo/a."
+    },
+    {
+        "name": "CC BY-SA",
+        "imagePath": "/licencias/licenciasCreativeCommons/cc_by_sa.png",
+        "description": "Similar a <strong>CC BY</strong>, pero obliga a que las obras derivadas o modificaciones mantengan la misma licencia y acrediten la autoría de la obra original.",
+        "example": "Un/a profesor/a escribe un libro de texto sobre matemáticas y lo libera con <strong>CC BY-SA</strong>. Cualquier persona o editorial puede imprimirlo o venderlo, siempre y cuando las versiones modificadas, como una edición con ejercicios extra o una traducción, se encuentren disponibles bajo la misma licencia <strong>CC BY-SA</strong> del libro original y den crédito al autor/a."
+    },
+    {
+        "name": "CC BY-ND",
+        "imagePath": "/licencias/licenciasCreativeCommons/cc_by_nd.png",
+        "description": "Como el <strong>CC BY</strong>, permite el uso comercial y no comercial mientras se dé crédito de autoría, pero se diferencia en que no permite modificaciones de la obra original.",
+        "example": "Un artículo publicado con <strong>CC BY-ND</strong> puede ser compartido en un repositorio, pero no puede ser editado, traducido ni resumido."
+    },
+    {
+        "name": "CC BY-NC",
+        "imagePath": "/licencias/licenciasCreativeCommons/cc_by_nc.png",
+        "description": "Permite la modificación y distribución, pero sólo con fines no comerciales y siempre con atribución.",
+        "example": "Una obra digital es publicada bajo la licencia <strong>CC BY-NC</strong> en un portafolio en línea, y cualquiera puede usarla para fines personales o educativos, e incluso modificarla o prohibir futuras modificaciones, pero no se permite su distribución comercial, como usar la ilustración en posters, estampados o tazas para venderlas."
+    },
+    {
+        "name": "CC BY-NC-SA",
+        "imagePath": "/licencias/licenciasCreativeCommons/cc_by_nc_sa.png",
+        "description": "Permite crear obras derivadas o modificaciones sin fines comerciales, siempre y cuando después sean distribuidas bajo la misma licencia que la original.",
+        "example": "Un/a desarrollador/a crea una aplicación móvil de aprendizaje de matemáticas y la hace disponible bajo <strong>CC BY-NC-SA</strong>. Un/a estudiante de programación puede modificar el código para agregar nuevas funciones o traducir la app a otro idioma, pero si quiere distribuirla no podrá ser con propósitos comerciales y la versión modificada también deberá publicarse con <strong>CC BY-NC-SA</strong>, permitiendo que otros/as la sigan editando y usando bajo las mismas condiciones."
+    },
+    {
+        "name": "CC BY-NC-ND",
+        "imagePath": "/licencias/licenciasCreativeCommons/cc_by_nc_nd.png",
+        "description": "Permite compartir la obra, pero sin modificaciones y sin fines comerciales, dando atribución de autoría. Es considerada la licencia más restrictiva.",
+        "example": "Un/a escritor/a publica su novela con <strong>CC BY-NC-ND</strong>. Esta podrá ser descargada, leída y distribuida exclusivamente de manera gratuita, pero nadie podrá modificarla, como crear una adaptación o traducirla."
+    }
+]
