@@ -1,8 +1,8 @@
 //Components
 import Accordion from "../../components/Accordion";
 import CreativeCommonsItem from "../../components/CreativeCommonsItem";
-import { ICreativeCommonsItem } from "../../components/CreativeCommonsItem/interface";
 import RecursosYHerramientasItem from "../../components/RecursosYHerramientasItem";
+import { ICreativeCommonsItem } from "../../components/CreativeCommonsItem/interface";
 
 //Styles
 import styles from "./index.module.scss";
@@ -24,6 +24,7 @@ const Licencias = () => {
                 {
                     LicenciasData.map(({ name, imagePath, externalURL, description }) =>
                         <RecursosYHerramientasItem
+                            key = {name}
                             name = {name}
                             imagePath = {imagePath}
                             externalURL = {externalURL}
@@ -41,7 +42,7 @@ const Licencias = () => {
                         imagePath,
                         description
                     }: ICreativeCommonsItem) => 
-                        <Accordion sectionName = {name}>
+                        <Accordion key = {name} sectionName = {name}>
                             <CreativeCommonsItem 
                                 name = {name}
                                 example = {example}

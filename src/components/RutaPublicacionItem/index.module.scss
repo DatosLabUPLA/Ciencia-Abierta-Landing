@@ -1,0 +1,22 @@
+.ruta-item-main__container {
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    .descripcion-ruta-item__text {
+        margin: 0;
+        text-align: justify;
+    }
+    .caracteristicas-ruta-item__title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-block: 10px;
+    }
+    .caracteristicas-ruta-item__container {
+        margin: 0;
+        width: 100%;
+        padding-left: 2%;
+        .caracteristicas-ruta-item__text {
+           width: 100%;
+        }
+    }
+}

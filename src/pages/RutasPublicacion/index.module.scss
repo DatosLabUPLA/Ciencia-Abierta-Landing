@@ -1,0 +1,35 @@
+.rutas-publicacion-main__container {
+    width: 100vw;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 35px;
+    align-items: center;
+    padding-inline: 100px;
+    flex-direction: column;
+    box-sizing: border-box;
+    .descripcion-rutas__title {
+        color: #0E9FE3;
+        font-size: 50px;
+    }
+    .descripcion-rutas__text {
+        margin: 0;
+        text-align: justify;
+    }
+    .short-descripcion-rutas__container {
+      width: 90%;
+      .short-descripcion-rutas__li {
+          width: 100%;
+          font-weight: 600;
+          .short-descripcion-rutas__text {
+            color: #707070;
+            font-weight: 400;
+            text-align: justify;
+        }
+      }
+    }
+    .descripcion-rutas__image {
+        width: 800px;
+        height: 1500px;
+        margin-block: 20px;
+    }
+}

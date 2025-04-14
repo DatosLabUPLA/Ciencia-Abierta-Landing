@@ -10,7 +10,7 @@ const BeneficioItem = ({name, benefits}: IBeneficio) => {
         <div className = {styles["beneficio-main__container"]}>
             <ul className = {styles["beneficio-ul__container"]}>
                 {
-                    benefits.map((benefit: string) => <li className = {styles["beneficio__li"]}>{benefit}</li>)
+                    benefits.map((benefit: string, index: number) => <li key = {index} className = {styles["beneficio__li"]}>{benefit}</li>)
                 }
             </ul>
             <h1 className = {styles["beneficio__title"]} dangerouslySetInnerHTML = {{ __html: name }}/>
