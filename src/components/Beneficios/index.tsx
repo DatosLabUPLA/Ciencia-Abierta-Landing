@@ -8,7 +8,7 @@ import styles from "./index.module.scss";
 //Data
 import BeneficiosData from "../../data/beneficios.json";
 
-const Beneficio = () => {
+const Beneficios = () => {
     return (
         <div className = {styles["beneficios-main__container"]}>
             {
@@ -24,4 +24,4 @@ const Beneficio = () => {
     );
 }
 
-export default Beneficio;
+export default Beneficios;

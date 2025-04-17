@@ -1,6 +1,7 @@
 //Components
+import Rutas from "../../components/Rutas";
 import Recursos from "../../components/Recursos";
-import Beneficio from "../../components/Beneficios";
+import Beneficios from "../../components/Beneficios";
 import Principios from "../../components/Principios";
 import RedirectButton from "../../components/RedirectButton";
 import CienciaAbiertaImage from "../../assets/ciencia_abierta.png";
@@ -47,7 +48,10 @@ const CienciaAbierta = () => {
                     <Principios />
                 </CienciaAbiertaSection>
                 <CienciaAbiertaSection title = {SectionData["beneficios"]["title"]} description = {SectionData["beneficios"]["description"]}>
-                    <Beneficio />
+                    <Beneficios />
+                </CienciaAbiertaSection>
+                <CienciaAbiertaSection title = {SectionData["rutas"]["title"]} description = {SectionData["rutas"]["description"]}>
+                    <Rutas />
                 </CienciaAbiertaSection>
                 <CienciaAbiertaSection title = {SectionData["recursos"]["title"]} description = {SectionData["recursos"]["description"]}>
                     <Recursos />

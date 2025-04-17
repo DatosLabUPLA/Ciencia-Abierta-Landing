@@ -1,0 +1,14 @@
+.rutas-main__container {
+    width: 100%;
+    display: grid;
+    row-gap: 20px;
+    min-height: 300px;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    a:nth-child(2n) {
+        transform: translateY(100px);
+        &:hover {
+            transform: translateY(80px);
+        }
+    }
+}

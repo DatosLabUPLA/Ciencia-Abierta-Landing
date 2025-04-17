@@ -1,0 +1,19 @@
+.ruta-item-main__container {
+    width: 200px;
+    display: flex;
+    height: 200px;
+    color: white;
+    cursor: url("../../../assets/custom_cursor.png"), pointer !important;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 50%;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    transition: all 0.4s ease;
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.6);
+    &:hover {
+        filter: brightness(1.1);
+        transform: translateY(-20px);
+    }
+}
