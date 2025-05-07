@@ -25,4 +25,16 @@
         width: 100%;
         margin-top: 50px;
     }
+    @media (max-width: 600px) {
+        .section__title {
+            font-size: 25px;
+        }
+        .section-description__text {
+            width: 95%;
+            font-size: 15px;
+        }
+        .section-children__container {
+            margin-top: 20px;
+        }
+    }
 }

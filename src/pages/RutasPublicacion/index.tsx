@@ -27,7 +27,7 @@ const RutasPublicacion = () => {
             </ul>
             <p className = {styles["descripcion-rutas__text"]}>Estos modelos fomentan la democratización del conocimiento y facilitan el acceso a información clave para la investigación y la educación.</p>
             <img className = {styles["descripcion-rutas__image"]} src = "/rutasPublicacion/rutas_flujo.png"/>
-            <div>
+            <div className = {styles["rutas-publicacion-accordion__container"]}>
                 {
                     RutasPublicacionData.map(({
                         name,

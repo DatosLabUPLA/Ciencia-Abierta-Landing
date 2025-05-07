@@ -4,7 +4,7 @@
     font-size: 20px;
     margin-bottom: 35px;
     align-items: center;
-    padding-inline: 100px;
+    padding-inline: 5%;
     flex-direction: column;
     box-sizing: border-box;
     .descripcion-rutas__title {
@@ -30,5 +30,10 @@
         width: 800px;
         height: 1500px;
         margin-block: 20px;
+    }
+    .rutas-publicacion-accordion__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }

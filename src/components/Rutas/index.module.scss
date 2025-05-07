@@ -1,7 +1,6 @@
 .rutas-main__container {
     width: 100%;
     display: grid;
-    row-gap: 20px;
     min-height: 300px;
     justify-items: center;
     grid-template-columns: repeat(5, 1fr);
@@ -10,5 +9,9 @@
         &:hover {
             transform: translateY(80px);
         }
+    }
+    @media (max-width: 600px) {
+        row-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

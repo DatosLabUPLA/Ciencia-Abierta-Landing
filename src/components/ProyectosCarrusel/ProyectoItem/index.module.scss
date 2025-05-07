@@ -28,4 +28,21 @@
         background: #FFFFFF;
         box-shadow: 0px 10px 15px #b1b1b2;
     }
+    @media (max-width: 600px) {
+        .proyecto__text {
+            width: 80%;
+            margin: 0;
+            font-size: 12px;
+            text-align: justify;
+        }
+        .proyecto__title {
+            margin: 0;
+            font-size: 25px;
+        }
+        .proyecto__image {
+            width: 70px;
+            height: 70px;
+            bottom: -60px;
+        }
+    }
 }

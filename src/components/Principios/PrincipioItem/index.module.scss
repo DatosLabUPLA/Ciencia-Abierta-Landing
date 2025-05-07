@@ -39,7 +39,21 @@
         }
     }
     
-    @media (min-width: 2000px) {
-        
+    @media (max-width: 1024px) {
+        width: 250px;
+        height: 250px;
+    }
+
+    @media (max-width: 600px) {
+        width: 190px;
+        height: 190px;
+        .principio-front__container {
+            padding: 10px;
+            font-size: 15px;
+        }
+        .principio-back__container {
+            font-size: 10px;
+            padding-inline: 12px;
+        }
     }
 }

@@ -2,8 +2,8 @@
     width: 100%;
     display: flex;
     min-height: 86px;
+    padding-inline: 5%;
     align-items: center;
-    padding-inline: 100px;
     box-sizing: border-box;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
@@ -36,6 +36,33 @@
                 transition: all 0.5s ease;
                 &:hover {
                     color: #0E9FE3;
+                }
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        .nav-ul__container {
+            .page__li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding-block: 2%;
+        padding-inline: 0%;
+        flex-direction: column;
+        .header-logo__container {
+            width: 120px;
+            height: 50px;
+        }
+        .nav-ul__container {
+            width: 80%;
+            .page__li {
+                a {
+                    font-size: 10px;
                 }
             }
         }

@@ -21,7 +21,7 @@
         }
         .ciencia-abierta__slogan {
             margin: 0;
-            font-size: 22;
+            font-size: 22px;
             font-weight: 400;
             margin-block: 40px;
         }
@@ -30,7 +30,7 @@
         width: 100%;
         display: flex;
         margin-top: 50px;
-        padding-inline: 100px;
+        padding-inline: 5%;
         flex-direction: column;
         box-sizing: border-box;
         .ciencia-abierta-informacion__container {
@@ -60,6 +60,50 @@
             .ciencia-abierta-definicion__image {
                 width: 450px;
                 height: 370px;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .ciencia-abierta-banner__container {
+            height: 400px;
+            padding-left: 0px;
+            align-items: center;
+            .ciencia-abierta__title {
+                font-size: 50px;
+            }
+            .ciencia-abierta__slogan {
+                font-size: 15px;
+            }
+        }
+        .ciencia-abierta-sections__container {
+            margin-top: 20px;
+            padding-inline: 2%;
+            .ciencia-abierta-informacion__container {
+                align-items: center;
+                flex-direction: column;
+                .ciencia-abierta-definicion__container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .ciencia-abierta-definicion__title {
+                        font-size: 25px;
+                    }
+                    .ciencia-abierta-definicion__text {
+                        font-size: 15px;
+                        text-align: justify;
+                        margin-block: 20px;
+                    }
+                    .ciencia-abierta-referencia_link {
+                        width: 95%;
+                        font-size: 10px;
+                        text-align: justify;
+                    }
+                }
+                .ciencia-abierta-definicion__image {
+                    width: 280px;
+                    height: 220px;
+                    margin-top: 15px;
+                }
             }
         }
     }

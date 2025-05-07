@@ -21,7 +21,7 @@ const CienciaAbierta = () => {
                 <h1 className = {styles["ciencia-abierta__title"]} data-aos = "fade-right">Ciencia Abierta</h1>
                 <h3 className = {styles["ciencia-abierta__slogan"]} data-aos = "fade-right">Conocimiento sin barreras, innovación sin límites</h3>
                 <RedirectButton
-                    url = "#"
+                    url = "https://acceso-abierto.anid.cl/componentes/inescienciaabierta/"
                     text = "Saber más"
                     type = "banner"
                 />
@@ -32,7 +32,7 @@ const CienciaAbierta = () => {
                         <h1 className = {styles["ciencia-abierta-definicion__title"]}>¿Qué es la Ciencia Abierta?</h1>
                         <p  className = {styles["ciencia-abierta-definicion__text"]}>La Ciencia Abierta promueve la colaboración y el intercambio de conocimientos para hacer la investigación más eficiente, creativa y transparente. A través del acceso libre a datos, herramientas e infraestructuras, fortalece la excelencia científica y la confianza social, impulsando el análisis, la innovación y el debate académico.</p>
                         <RedirectButton 
-                            url = "#"
+                            url = "https://unesdoc.unesco.org/ark:/48223/pf0000379949_spa"
                             text = "Saber más"
                             type = "section"
                         />
