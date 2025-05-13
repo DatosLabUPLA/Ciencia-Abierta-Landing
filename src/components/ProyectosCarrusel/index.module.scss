@@ -31,9 +31,9 @@
     .proyectos-carrusel-right-arrow__button {
         right: -45px;
     }
-    @media (max-width: 600px) {
-        width: 90%;
-        height: 250px;
+    @media (max-width: 768px){
+        width: 85%;
+        max-height: 220px;
         margin-bottom: 0px;
         .proyectos-carrusel-left-arrow__button, .proyectos-carrusel-right-arrow__button {
             width: 50px;

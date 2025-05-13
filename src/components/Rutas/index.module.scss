@@ -10,7 +10,7 @@
             transform: translateY(80px);
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px){
         row-gap: 30px;
         grid-template-columns: repeat(2, 1fr);
     }
