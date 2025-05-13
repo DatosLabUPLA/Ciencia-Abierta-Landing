@@ -56,4 +56,11 @@
             visibility: visible;
         }
     }
+    
+    @media (max-width: 768px) {
+        .descripcion-repositorio__text {
+            width: 120%;
+            font-size: 12px;
+        }
+    }
 }

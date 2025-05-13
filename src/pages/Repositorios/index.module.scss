@@ -21,4 +21,17 @@
         justify-items: center;
         grid-template-columns: repeat(4, 1fr);
     }
+    
+    @media (max-width: 768px) {
+        .descripcion-repositorios__title, .ejemplos-repositorios__title {
+            font-size: 28px;
+            text-align: center;
+        }
+        .descripcion-repositorios__text {
+            font-size: 15px;
+        }
+        .ejemplos-repositorios__container { 
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }

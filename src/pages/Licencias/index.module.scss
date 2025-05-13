@@ -31,4 +31,22 @@
         display: flex;
         flex-direction: column;
     }
+
+    @media (max-width: 768px) {
+        .descripcion-licencias__title, .ejemplos-licencias__title {
+            font-size: 28px;
+            text-align: center;
+        }
+        .creative-commons-licencias__title {
+            font-size: 28px;
+            text-align: center;
+            margin-block: 25px;
+        }
+        .descripcion-licencias__text {
+            font-size: 15px;
+        }
+        .ejemplos-licencias__container { 
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }

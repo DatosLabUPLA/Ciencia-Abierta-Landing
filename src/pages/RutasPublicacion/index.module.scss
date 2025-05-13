@@ -2,9 +2,9 @@
     width: 100vw;
     display: flex;
     font-size: 20px;
+    padding-inline: 5%;
     margin-bottom: 35px;
     align-items: center;
-    padding-inline: 5%;
     flex-direction: column;
     box-sizing: border-box;
     .descripcion-rutas__title {
@@ -35,5 +35,25 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+        .descripcion-rutas__title {
+            font-size: 28px;
+            text-align: center;
+        }
+        .descripcion-rutas__text {
+            font-size: 15px;
+        }
+        .short-descripcion-rutas__container {
+            padding: 0;
+            .short-descripcion-rutas__li {
+                font-size: 15px;
+            }
+        }
+        .descripcion-rutas__image {
+            width: 350px;
+            height: 750px;
+        }
     }
 }

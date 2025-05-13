@@ -33,4 +33,10 @@
     &:hover {
         transform: translateY(-50px);
     }
+
+    @media (max-width: 768px) { 
+        &:hover {
+            transform: translateY(-20px);
+        }
+    }
 }

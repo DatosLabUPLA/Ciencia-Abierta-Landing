@@ -2,8 +2,8 @@
     width: 100vw;
     display: flex;
     font-size: 20px;
-    margin-bottom: 35px;
     padding-inline: 5%;
+    margin-bottom: 35px;
     box-sizing: border-box;
     flex-direction: column;
     .descripcion-datos__title, .ejemplos-datos__title {
@@ -20,5 +20,18 @@
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(4, 1fr);
+    }
+    
+    @media (max-width: 768px) {
+        .descripcion-datos__title, .ejemplos-datos__title {
+            font-size: 28px;
+            text-align: center;
+        }
+        .descripcion-datos__text {
+            font-size: 15px;
+        }
+        .ejemplos-datos__container { 
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }

@@ -21,4 +21,17 @@
         justify-items: center;
         grid-template-columns: repeat(4, 1fr);
     }
+
+    @media (max-width: 768px) {
+        .descripcion-software__title, .ejemplos-software__title {
+            font-size: 28px;
+            text-align: center;
+        }
+        .descripcion-software__text {
+            font-size: 15px;
+        }
+        .ejemplos-software__container { 
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
