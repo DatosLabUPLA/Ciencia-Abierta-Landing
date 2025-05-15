@@ -27,8 +27,6 @@
     }
 
     @media (max-width: 768px) {
-        display: flex;
-        justify-content: center;
         .section__title {
             font-size: 25px;
         }
@@ -37,7 +35,9 @@
             font-size: 15px;
         }
         .section-children__container {
+            display: flex;
             margin-top: 20px;
+            justify-content: center;
         }
     }
 }
