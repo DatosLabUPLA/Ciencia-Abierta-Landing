@@ -25,7 +25,10 @@
         width: 100%;
         margin-top: 50px;
     }
-    @media (max-width: 768px){
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
         .section__title {
             font-size: 25px;
         }
