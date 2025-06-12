@@ -1,5 +1,5 @@
 //Components
-import  Layout from "../components/Layout/index";
+import  Layout from "../components/Layout";
 import {
     Route,
     Routes,

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import styles from "./index.module.scss";
 
 //Images
-import LogoUpla from "../../assets/logo_upla.png";
+import LogoUpla from "../../assets/logo_ines_ca.png";
 
 const Header = () => {
     return (
