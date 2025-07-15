@@ -12,7 +12,7 @@ const Rutas = () => {
         <div className = {styles["rutas-main__container"]}>
             {
                 RutasPublicacionData.map(({ name, color }) => 
-                    <RutaItem name = {name} backgroundColor = {color}/>
+                    <RutaItem key = {name} name = {name} backgroundColor = {color}/>
                 )
             }
         </div>

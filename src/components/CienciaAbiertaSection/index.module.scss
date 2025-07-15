@@ -23,7 +23,9 @@
     }
     .section-children__container {
         width: 100%;
+        display: flex;
         margin-top: 50px;
+        justify-content: center;
     }
 
     @media (max-width: 768px) {
