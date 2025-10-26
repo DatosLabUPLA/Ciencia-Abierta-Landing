@@ -5,7 +5,7 @@ import Beneficios from "../../components/Beneficios";
 import Principios from "../../components/Principios";
 import RedirectButton from "../../components/RedirectButton";
 import CienciaAbiertaImage from "../../assets/ciencia_abierta.png";
-import ProyectosCarrusel from "../../components/ProyectosCarrusel";
+//import ProyectosCarrusel from "../../components/ProyectosCarrusel";
 import CienciaAbiertaSection from "../../components/CienciaAbiertaSection";
 
 //Styles 
@@ -56,9 +56,9 @@ const CienciaAbierta = () => {
                 <CienciaAbiertaSection title = {SectionData["recursos"]["title"]} description = {SectionData["recursos"]["description"]}>
                     <Recursos />
                 </CienciaAbiertaSection>
-                <CienciaAbiertaSection title = {SectionData["proyectos"]["title"]} description = {SectionData["proyectos"]["description"]}>
+                {/* <CienciaAbiertaSection title = {SectionData["proyectos"]["title"]} description = {SectionData["proyectos"]["description"]}>
                     <ProyectosCarrusel />
-                </CienciaAbiertaSection>
+                </CienciaAbiertaSection> */}
             </div>
         </div>
     );
