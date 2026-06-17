@@ -1,11 +1,11 @@
 //Components
-import RecursosYHerramientasItem from "../../components/RecursosYHerramientasItem";
+import RecursosYHerramientasItem from "@/components/RecursosYHerramientasItem";
+
+//Data
+import SoftwareYHerramientasData from "@/data/softwareYHerramientas";
 
 //Styles
 import styles from "./index.module.scss";
-
-//Data
-import SoftwareYHerramientasData from "../../data/softwareYHerramientas.json"
 
 const SoftwareYHerramientas = () => {
     return (

@@ -1,0 +1,20 @@
+.descripcion-proyecto__container {
+    width: 100%;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    .descripcion-proyecto__text {
+        margin: 0;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .proyecto-politicas__container {
+        width: 100%;
+        display: flex;
+        column-gap: 30px;
+        margin-top: 10px;
+        .proyecto-politica__button {
+            width: 260px;
+        }
+    }
+}

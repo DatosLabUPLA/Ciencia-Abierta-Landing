@@ -1,0 +1,47 @@
+.ciencia-abierta-descripcion__container {
+    width: 100%;
+    display: flex;
+    row-gap: 25px;
+    .ciencia-abierta-definicion__container {
+        row-gap: 25px;
+        display: flex;
+        flex-direction: column;
+        .ciencia-abierta-definicion__title {
+            margin: 0px;
+            font-size: 54px;
+            color: #0E9FE3;
+            font-weight: bold;
+        }
+        .ciencia-abierta-definicion__text {
+            margin: 0;
+            max-width: 90%;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .ciencia-abierta-referencia_link {
+            font-size: 20px;
+        }
+    }
+    .ciencia-abierta-definicion__image {
+        width: 400px;
+        height: 370px;
+    }
+
+    @media (max-width: 768px) { 
+        align-items: center;
+        flex-direction: column;
+        .ciencia-abierta-definicion__container {
+            align-items: center;
+            .ciencia-abierta-definicion__title {
+                font-size: 25px;
+            }
+            .ciencia-abierta-definicion__text {
+                font-size: 15px;
+            }
+        }
+        .ciencia-abierta-definicion__image {
+            width: 330px;
+            height: 300px;
+        }
+    }
+}

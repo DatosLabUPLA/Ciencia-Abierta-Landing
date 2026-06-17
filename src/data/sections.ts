@@ -1,0 +1,24 @@
+const SectionData = {
+    "principios" : {
+        "title": "Principios de la Ciencia Abierta UNESCO",
+        "description": "Los principios rectores de la Ciencia Abierta establecen un marco para garantizar condiciones y prácticas que respeten sus valores fundamentales y promuevan sus ideales."
+    },    
+    "beneficios" : {
+        "title": "Beneficios de la Ciencia Abierta",
+        "description": "La Ciencia Abierta ofrece múltiples beneficios que impactan positivamente en la investigación, la innovación y la sociedad en general. De acuerdo con la Recomendación de la UNESCO sobre Ciencia Abierta, estos beneficios pueden agruparse en varias dimensiones clave."
+    },
+    "rutas" : {
+        "title": "Rutas de Publicación en Ciencia Abierta",
+        "description": "Rutas de publicación en Ciencia Abierta según la UNESCO son los caminos o mecanismos que permiten compartir conocimientos científicos de forma accesible, inclusiva y sin barreras, promoviendo la colaboración y el acceso universal a la información."
+    },
+    "recursos" : {
+        "title": "Recursos y Herramientas para la Ciencia Abierta",
+        "description": "Los recursos y herramientas de la Ciencia Abierta proporcionan una infraestructura esencial para garantizar el acceso, la reutilización y la difusión del conocimiento científico, facilitando la colaboración global y fortaleciendo la transparencia en la investigación."
+    },    
+    "proyectos" : {
+        "title": "Ciencia Abierta en Universidad de Playa Ancha",
+        "description": null
+    }
+}
+
+export default SectionData;

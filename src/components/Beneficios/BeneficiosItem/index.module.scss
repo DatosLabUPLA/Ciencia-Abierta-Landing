@@ -1,0 +1,49 @@
+.beneficio-main__container {
+    width: 320px;
+    display: flex;
+    height: 400px;
+    color: #0E9FE3;
+    overflow: hidden;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #F6FCFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    .beneficio__svg {
+        width: 100px;
+        height: 100px;
+        fill: #0E9FE3;
+        margin-block: 15px;
+    }
+    .beneficio-ul__container {
+        margin: 0;
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        row-gap: 10px;
+        padding-top: 5px;
+        flex-direction: column;
+        box-sizing: border-box;
+        .beneficio__li {
+            width: 95%;
+            font-weight: 500;
+        }
+    }
+    .beneficio-title__container {
+        width: 100%;
+        height: 70px;
+        padding: 10px;
+        text-align: center;
+        align-content: center;
+        box-sizing: border-box;
+        justify-content: center;
+        background-color: #0E9FE3;
+    }
+    .beneficio__title {
+        margin: 0;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

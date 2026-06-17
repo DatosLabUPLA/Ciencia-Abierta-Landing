@@ -1,15 +1,15 @@
-//Components
-import Accordion from "../../components/Accordion";
-import CreativeCommonsItem from "../../components/CreativeCommonsItem";
-import RecursosYHerramientasItem from "../../components/RecursosYHerramientasItem";
-import { ICreativeCommonsItem } from "../../components/CreativeCommonsItem/interface";
+// Components
+import Accordion from "@/components/Accordion";
+import CreativeCommonsItem from "@/components/CreativeCommonsItem";
+import RecursosYHerramientasItem from "@/components/RecursosYHerramientasItem";
+import { ICreativeCommonsItem } from "@/components/CreativeCommonsItem/interface";
 
-//Styles
+// Data
+import LicenciasData from "@/data/licencias";
+import CreativeCommonsData from "@/data/creativeCommonsLicencias";
+
+// Styles
 import styles from "./index.module.scss";
-
-//Data
-import LicenciasData from "../../data/licencias.json";
-import CreativeCommonsData from "../../data/creativeCommonsLicencias.json";
 
 const Licencias = () => {
     return (
@@ -22,7 +22,12 @@ const Licencias = () => {
             <h1 data-aos = "fade-right" className = {styles["ejemplos-licencias__title"]}>Herramientas de Licencias Abiertas</h1>
             <div className = {styles["ejemplos-licencias__container"]}>
                 {
-                    LicenciasData.map(({ name, imagePath, externalURL, description }) =>
+                    LicenciasData.map(({ 
+                        name, 
+                        imagePath, 
+                        externalURL, 
+                        description
+                    }) =>
                         <RecursosYHerramientasItem
                             key = {name}
                             name = {name}

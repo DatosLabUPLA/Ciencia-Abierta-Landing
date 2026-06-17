@@ -1,11 +1,11 @@
-//Components
-import RecursosYHerramientasItem from "../../components/RecursosYHerramientasItem";
+// Components
+import RecursosYHerramientasItem from "@/components/RecursosYHerramientasItem";
 
-//Styles
+// Data
+import DatosInvestigacionData from "@/data/datos";
+
+// Styles
 import styles from "./index.module.scss";
-
-//Data
-import DatosData from "../../data/datos.json"
 
 const DatosInvestigacion = () => {
     return (
@@ -23,7 +23,7 @@ const DatosInvestigacion = () => {
             <h1 data-aos = "fade-right" className = {styles["ejemplos-datos__title"]}>Datos de Investigación</h1>
             <div className = {styles["ejemplos-datos__container"]}>
                 {
-                    DatosData.map(({ name, imagePath, externalURL, description }) =>
+                    DatosInvestigacionData.map(({ name, imagePath, externalURL, description }) =>
                         <RecursosYHerramientasItem
                             name = {name}
                             imagePath = {imagePath}

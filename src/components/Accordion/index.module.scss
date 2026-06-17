@@ -8,8 +8,8 @@
         display: flex;
         cursor: pointer;
         color: black;
-        font-size: 2rem;
         font-weight: 600;
+        font-size: 1.5rem;
         border-radius: 5px;
         padding-inline: 2%;
         align-items: center;
@@ -17,12 +17,11 @@
         transition: all 0.3s ease;
         background-color: #f0f0f0;
         justify-content: space-between;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-        svg {
-            transition: all 0.4s ease;
-        }
-        .accordion-open__icon {
-            transform: rotateZ(90deg);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+        .accordion__icon {
+            width: 40px;
+            height: 40px;
+            color: inherit;
         }
         &:hover {
             color: white;
@@ -37,18 +36,28 @@
         transition: all 0.5s ease;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-    .accordion-content-open__container {
-        max-height: 500px;
-    }
-
+    
     @media (max-width: 768px) {
         margin-block: 1%;
         .accordion__button {
-            font-size: 1.6rem;
             height: 70px;
+            font-size: 1.6rem;
         }
         .accordion-content-open__container {
             max-height: 800px;
         }
+    }
+}
+
+.accordion__open {
+    .accordion__button {
+        color: "white";
+        background-color: "#6b6b6b";
+        .accordion__icon {
+            transform: rotateZ(90deg);
+        }
+    }
+    .accordion-content__container {
+        max-height: 500px;
     }
 }

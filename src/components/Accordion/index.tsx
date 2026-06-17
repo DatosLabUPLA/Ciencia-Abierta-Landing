@@ -1,41 +1,56 @@
-//Core Dependencies
+// Core Dependencies
 import { useState } from "react";
 
-//Components
-import { MdOutlineArrowForwardIos } from "react-icons/md";
+// Components
+import IconSymbol from "../IconSymbol";
 
-//Interfaces
-import { IAccordion } from "./interface";
-
-//Styles
+// Styles
 import styles from "./index.module.scss";
 
-const Accordion = ({ sectionName, children, closedStyles, openStyles }: IAccordion) => {
-    const [open, setOpen] = useState<boolean>(false);
+interface IAccordion {
+    sectionName: string;
+    children: React.ReactNode;
+    closedStyles?: {
+        color?: string;
+        backgroundColor?: string;
+    };
+    openStyles?: {
+        color?: string;
+        filter?: string;
+        backgroundColor?: string;
+    };
+}
 
-    const closedButtonStyles = closedStyles ? closedStyles : undefined;
+const Accordion = ({ 
+    children, 
+    sectionName, 
+    openStyles = {},
+    closedStyles = {}
+}: IAccordion) => {
+    const [isOpen, setSetOpen] = useState<boolean>(false);
+    const containerClassName = `${styles["accordion-main__container"]} ${isOpen ? styles["accordion__open"]: ""}`.trim();
 
-    const OpenButtonStyles = openStyles ? openStyles : {
-        color: "white",
-        backgroundColor: "#6b6b6b"
-    }
+    const openButtonStyle = isOpen ? openStyles : {};
 
-    const ternaryButtonStyle = open ? OpenButtonStyles : undefined;
-
-    const setOpenHandler = () => {
-        setOpen(!open);
+    const handleOpenState = (newState: boolean) => {
+        setSetOpen(newState);
     }
 
     return (
-        <div className = {styles["accordion-main__container"]}>
+        <div className = {containerClassName}>
             <button 
-                onClick = {setOpenHandler}
                 className = {styles["accordion__button"]} 
-                style = {{...closedButtonStyles, ...ternaryButtonStyle}}>
-                {sectionName} <MdOutlineArrowForwardIos className = {open ? styles["accordion-open__icon"] : ""}/>
+                onClick = {() => handleOpenState(!isOpen)}
+                style = {{...closedStyles, ...openButtonStyle}}
+            >
+                {sectionName}
+                <IconSymbol
+                    iconLibrary = "MdIcons"
+                    iconName = "MdOutlineArrowForwardIos"
+                    customClass = {styles["accordion__icon"]}
+                />
             </button>
-            <div 
-                className = {`${styles["accordion-content__container"]} ${open ? styles["accordion-content-open__container"]: ""}`}>
+            <div className = {styles["accordion-content__container"]}>
                 {children}
             </div>
         </div>

@@ -1,17 +1,7 @@
 .rutas-main__container {
+    gap: 30px;
     width: 100%;
-    display: grid;
-    min-height: 300px;
-    justify-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    a:nth-child(2n) {
-        transform: translateY(100px);
-        &:hover {
-            transform: translateY(80px);
-        }
-    }
-    @media (max-width: 768px){
-        row-gap: 30px;
-        grid-template-columns: repeat(2, 1fr);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

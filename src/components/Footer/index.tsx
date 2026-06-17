@@ -1,46 +1,104 @@
-//Components
-import { FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { 
-    FaInstagram,
-    FaFacebookF 
-} from "react-icons/fa";
+// Core Dependencies
+import { motion } from "motion/react"; 
 
-//Styles
+// Components
+import IconSymbol from "../IconSymbol";
+
+// Constants
+import { slideUpVariant, delayChildrenVariant } from "@/constants/animate-presence-variants";
+
+// Data
+import RedesSocialesData from "@/data/redesSociales";
+
+// Images
+import LogoFooterUpla from "@/assets/commons/logo_footer_upla.png";
+
+// Styles
 import styles from "./index.module.scss";
-
-//Images
-import LogoFooterUpla from "../../assets/logo_footer_upla.png";
 
 const Footer = () => {
     return (
-        <div className = {styles["footer-main__container"]}>
-            <img data-aos = "fade-right" src = {LogoFooterUpla} className = {styles["footer__image"]}/>
-            <div data-aos = "fade-down" className = {styles["pages-main__container"]}>
-                <h1 className = {styles["pages__title"]}>Visítanos también en</h1>
+        <motion.div
+            initial = "hidden"
+            whileInView = "visible"
+            variants = {delayChildrenVariant}
+            viewport = {{ once: true, amount: 0.8 }}
+            className = {styles["footer-main__container"]}
+        >
+            <motion.div
+                variants = {slideUpVariant}
+                className = {styles["footer-content__container"]}
+            >
+                <h1 className = {styles["footer-content__title"]}>Visítanos también en</h1>
                 <div className = {styles["pages__container"]}>
-                    <a target = "_blank" href = "https://www.upla.cl/portada/">- Página UPLA</a>
-                    <a target = "_blank" href = "https://www.upla.cl/noticias/">- Noticias UPLA</a>
+                    <a 
+                        target = "_blank"
+                        className = {styles["page__link"]}
+                        href = "https://www.upla.cl/portada/"
+                    >
+                        - Página UPLA
+                    </a>
+                    <a 
+                        target = "_blank"
+                        className = {styles["page__link"]}
+                        href = "https://www.upla.cl/noticias/"
+                    >
+                        - Noticias UPLA
+                    </a>
                 </div>
-            </div>
-            <div data-aos = "fade-down" className = {styles["social-networks-main__container"]}>
-                <h1 className = {styles["social-networks__title"]}>Nuestras redes sociales</h1>
+            </motion.div>
+            <motion.div
+                variants = {slideUpVariant}
+                className = {styles["footer-content__container"]}
+            >
+                <h1 className = {styles["footer-content__title"]}>Nuestras redes sociales</h1>
                 <div className = {styles["social-networks__container"]}>
-                    <a target = "_blank" href = "https://www.instagram.com/upla_comunica/" style = {{"backgroundColor": "#ea2c59"}}>
-                        <FaInstagram />
-                    </a>
-                    <a target = "_blank" href = "https://www.facebook.com/uplacomunica" style = {{"backgroundColor": "#3b5998"}}>
-                        <FaFacebookF />
-                    </a>
-                    <a target = "_blank" href = "https://twitter.com/upla_comunica" style = {{"backgroundColor": "#000000"}}>
-                        <FaXTwitter />
-                    </a>
-                    <a target = "_blank" href = "https://www.youtube.com/user/comunicacionesupla" style = {{"backgroundColor": "#a82400"}}>
-                        <FaYoutube />
-                    </a>
+                    {
+                        RedesSocialesData.map(
+                            ({
+                                href,
+                                iconName,
+                                iconLibrary
+                            }) => (
+                                <a
+                                    href = {href}
+                                    target = "_blank"
+                                    className = {styles["social-network__link"]}
+                                >
+                                    <IconSymbol 
+                                        customClass = {styles["custom-link__icon"]}
+                                        iconName = {iconName}
+                                        iconLibrary = {iconLibrary}
+                                    />
+                                </a>
+                            )
+                        )
+                    }
                 </div>
-            </div>
-        </div>
+            </motion.div>
+            <motion.div
+                variants = {slideUpVariant}
+                className = {styles["footer-content__container"]}
+            >
+                <h1 className = {styles["footer-content__title"]}>Contacto</h1>
+                <a 
+                    className = {styles["footer__link"]} 
+                    href = "mailto:ines.cienciaabierta@upla.cl"
+                >
+                    <IconSymbol 
+                        customClass = {styles["custom-link__icon"]}
+                        iconName = "IoMdMail"
+                        iconLibrary = "IoIcons"
+                    /> 
+                    ines.cienciaabierta@upla.cl
+                </a>
+            </motion.div>
+            <motion.img 
+                src = {LogoFooterUpla} 
+                variants = {slideUpVariant}
+                className = {styles["footer__image"]} 
+            />
+        </motion.div>
     );
 }
 
