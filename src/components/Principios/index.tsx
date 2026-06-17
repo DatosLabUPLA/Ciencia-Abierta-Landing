@@ -1,19 +1,22 @@
-//Components
-import { IPrincipio } from "./interface";
-import PrincipioItem from "./PrincipioItem";
+// Components
+import PrincipiosItem from "./PrincipiosItem";
 
-//Styles
+// Styles
 import styles from "./index.module.scss";
 
-//Data
-import PrincipiosData from "../../data/principios.json";
+// Data
+import PrincipiosData from "@/data/principios";
 
 const Principios = () => {
     return (
         <div className = {styles["principios-main__container"]}>
             {
-                PrincipiosData.map(({name, backgroundText, backgroundColor}: IPrincipio) => 
-                    <PrincipioItem 
+                PrincipiosData.map(({
+                    name, 
+                    backgroundText, 
+                    backgroundColor
+                }) => 
+                    <PrincipiosItem 
                         key = {name}
                         name = {name} 
                         backgroundText = {backgroundText} 

@@ -5,7 +5,7 @@ import RecursosYHerramientasItem from "../../components/RecursosYHerramientasIte
 import styles from "./index.module.scss";
 
 //Data
-import RepositoriosData from "../../data/repositorios.json"
+import RepositoriosData from "../../data/repositorios"
 
 const Repositorios = () => {
     return (
@@ -20,6 +20,7 @@ const Repositorios = () => {
                 {
                     RepositoriosData.map(({ name, imagePath, externalURL, description }) =>
                         <RecursosYHerramientasItem
+                            key = {name}
                             name = {name}
                             imagePath = {imagePath}
                             externalURL = {externalURL}

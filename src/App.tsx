@@ -1,12 +1,14 @@
-//Components
+// Components
 import AOS  from "aos";
-import { useEffect } from "react";
+import { useEffect, PropsWithChildren } from "react";
 
-//Styles
-import "./App.scss";
+// Styles
 import "aos/dist/aos.css";
+import styles from "./App.module.scss";
 
-const App: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const App = ({ 
+  children 
+}: PropsWithChildren) => {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -14,8 +16,9 @@ const App: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       easing: "ease-in-out"
     });
   }, []);
+
   return (
-    <div className = "main__container">
+    <div className = {styles["main__container"]}>
       {children}
     </div>
   )

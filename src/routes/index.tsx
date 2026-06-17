@@ -1,41 +1,43 @@
-//Components
-import  Layout from "../components/Layout";
+// Core Dependencies
 import {
     Route,
-    Routes,
     Navigate,
-    BrowserRouter
+    createBrowserRouter,
+    createRoutesFromElements
 } from "react-router-dom";
 
-//Pages
-import LicenciasPage from "../pages/Licencias";
-import RepositoriosPage from "../pages/Repositorios";
-import CienciaAbiertaPage from "../pages/CienciaAbierta";
-import RutasPublicacionPage from "../pages/RutasPublicacion";
-import DatosInvestigacionPage from "../pages/DatosInvestigacion";
-import SoftwareYHerramientasPage from "../pages/SoftwareYHerramientas";
+// Components
+import GeneralLayout from "./layouts/GeneralLayout";
 
-const Licencias = <Layout><LicenciasPage /></Layout>
-const Repositorios = <Layout><RepositoriosPage /></Layout>;
-const CienciaAbierta = <Layout><CienciaAbiertaPage /></Layout>;
-const RutasPublicacion = <Layout><RutasPublicacionPage /></Layout>
-const DatosInvestigacion = <Layout><DatosInvestigacionPage /></Layout>
-const SoftwareYHerramientas = <Layout><SoftwareYHerramientasPage /></Layout>
+// Pages
+import LicenciasPage from "@/pages/Licencias";
+import ActividadesPage from "@/pages/Actividades";
+import RepositoriosPage from "@/pages/Repositorios";
+import CienciaAbiertaPage from "@/pages/CienciaAbierta";
+import RutasPublicacionPage from "@/pages/RutasPublicacion";
+import RecursosDigitalesPage from "@/pages/RecursosDigitales";
+import DatosInvestigacionPage from "@/pages/DatosInvestigacion";
+import SoftwareYHerramientasPage from "@/pages/SoftwareYHerramientas";
+import ProyectoCienciaAbiertaPage from "@/pages/ProyectoCienciaAbierta";
 
-const Router = () => (
-    <BrowserRouter>
-        <Routes>
-            <Route index path = "/ciencia-abierta" element = {CienciaAbierta}/>
-            <Route path = "/diplomado" element = {CienciaAbierta}/>
-            <Route path = "/proyecto-ciencia-abierta" element = {CienciaAbierta}/>
-            <Route path = "/repositorios" element = {Repositorios}/>
-            <Route path = "/datos-investigacion" element = {DatosInvestigacion}/>
-            <Route path = "/software-y-herramientas" element = {SoftwareYHerramientas}/>
-            <Route path = "/licencias" element = {Licencias}/>
-            <Route path = "/rutas-de-publicacion" element = {RutasPublicacion}/>
+const Router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route>
+            <Route element = {<GeneralLayout />}>
+                <Route path = "/licencias" element = {<LicenciasPage />}/>
+                <Route path = "/actividades" element = {<ActividadesPage />}/>
+                <Route path = "/diplomado" element = {<CienciaAbiertaPage />}/>
+                <Route path = "/repositorios" element = {<RepositoriosPage />}/>
+                <Route path = "/recursos" element = {<RecursosDigitalesPage />}/>
+                <Route index path = "/ciencia-abierta" element = {<CienciaAbiertaPage />}/>
+                <Route path = "/rutas-de-publicacion" element = {<RutasPublicacionPage />}/>
+                <Route path = "/datos-investigacion" element = {<DatosInvestigacionPage />}/>
+                <Route path = "/software-y-herramientas" element = {<SoftwareYHerramientasPage />}/>
+                <Route path = "/proyecto-ciencia-abierta" element = {<ProyectoCienciaAbiertaPage />}/>
+            </Route>
             <Route path = "*" element = {<Navigate to = "/ciencia-abierta"/>}/>
-        </Routes>
-    </BrowserRouter>
+        </Route>
+    )
 );
 
 export default Router;

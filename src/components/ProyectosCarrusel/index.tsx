@@ -10,7 +10,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import styles from "./index.module.scss";
 
 //Data
-import ProyectosCarruselData from "../../data/proyectos.json";
+import ProyectosData from "@/data/proyectos";
 
 const ProyectosCarrusel = () => {
     const [endPosition, setEndPosition] = useState(false);
@@ -18,10 +18,10 @@ const ProyectosCarrusel = () => {
     const [currentItemIndex, setCurrentItemIndex] = useState(0);
     
     const changeProyectoHandler = (next: boolean) => {
-        if (next && currentItemIndex < (ProyectosCarruselData.length - 1)) {
+        if (next && currentItemIndex < (ProyectosData.length - 1)) {
             setStartPosition(false);
             setCurrentItemIndex(currentItemIndex + 1);
-            setEndPosition((currentItemIndex + 1) === (ProyectosCarruselData.length - 1) ? true : false);
+            setEndPosition((currentItemIndex + 1) === (ProyectosData.length - 1) ? true : false);
         } else if (!next && currentItemIndex > 0) {
             setEndPosition(false);
             setCurrentItemIndex(currentItemIndex - 1);
@@ -39,7 +39,7 @@ const ProyectosCarrusel = () => {
                 <IoIosArrowBack size = {24} color = "white"/>
             </button>
             {
-                ProyectosCarruselData.map(({name, imagePath, description}, index) => 
+                ProyectosData.map(({name, imagePath, description}, index) => 
                     <ProyectoItem
                         key = {name}
                         name = {name}

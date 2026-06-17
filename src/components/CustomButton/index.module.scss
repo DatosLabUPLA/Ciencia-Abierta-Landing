@@ -1,0 +1,5 @@
+@use "@/styles/buttons";
+
+.custom__button {
+    @extend %custom__button;
+}

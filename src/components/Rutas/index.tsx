@@ -1,18 +1,24 @@
-//Components
-import RutaItem from "./RutaItem";
+// Components
+import RutasItem from "./RutasItem";
 
-//Styles
+// Data
+import RutasPublicacionData from "@/data/rutasPublicacion";
+
+// Styles
 import styles from "./index.module.scss";
-
-//Data
-import RutasPublicacionData from "../../data/rutasPublicacion.json";
 
 const Rutas = () => {
     return (
         <div className = {styles["rutas-main__container"]}>
             {
-                RutasPublicacionData.map(({ name, color }) => 
-                    <RutaItem key = {name} name = {name} backgroundColor = {color}/>
+                RutasPublicacionData.map(
+                    ({ name, color }) => (
+                        <RutasItem 
+                            key = {name} 
+                            name = {name} 
+                            backgroundColor = {color}
+                        />
+                    )
                 )
             }
         </div>

@@ -1,0 +1,6 @@
+@use "@/styles/buttons";
+
+.custom__button {
+    text-decoration: none;
+    @extend %custom__button;
+}

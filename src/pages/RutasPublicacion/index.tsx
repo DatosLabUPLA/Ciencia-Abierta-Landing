@@ -1,12 +1,15 @@
-//Components
-import Accordion from "../../components/Accordion";
-import RutaPublicacionItem from "../../components/RutaPublicacionItem";
+// Components
+import Accordion from "@/components/Accordion";
+import RutaPublicacionItem from "@/components/RutaPublicacionItem";
 
-//Styles
+// Data
+import RutasPublicacionData from "@/data/rutasPublicacion";
+
+// Images
+import RutasPublicacionImage from "@/assets/rutasPublicacion/rutas_flujo.png";
+
+// Styles
 import styles from "./index.module.scss";
-
-//Data
-import RutasPublicacionData from "../../data/rutasPublicacion.json";
 
 const RutasPublicacion = () => {
     return ( 
@@ -25,8 +28,10 @@ const RutasPublicacion = () => {
                     )
                 }
             </ul>
-            <p className = {styles["descripcion-rutas__text"]}>Estos modelos fomentan la democratización del conocimiento y facilitan el acceso a información clave para la investigación y la educación.</p>
-            <img className = {styles["descripcion-rutas__image"]} src = "/rutasPublicacion/rutas_flujo.png"/>
+            <p className = {styles["descripcion-rutas__text"]}>
+                Estos modelos fomentan la democratización del conocimiento y facilitan el acceso a información clave para la investigación y la educación.
+            </p>
+            <img className = {styles["descripcion-rutas__image"]} src = {RutasPublicacionImage}/>
             <div className = {styles["rutas-publicacion-accordion__container"]}>
                 {
                     RutasPublicacionData.map(({

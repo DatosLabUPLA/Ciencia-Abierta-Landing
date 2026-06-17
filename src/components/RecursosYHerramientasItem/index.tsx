@@ -1,8 +1,12 @@
-//Interfaces
-import { IRecursosYHerramientasItem } from "./interface";
-
-//Styles
+// Styles
 import styles from "./index.module.scss";
+
+export interface IRecursosYHerramientasItem {
+    name: string;
+    imagePath: string;
+    externalURL: string;
+    description?: string;
+}
 
 const RecursosYHerramientasItem = ({
     name,
@@ -22,7 +26,10 @@ const RecursosYHerramientasItem = ({
                 className = {styles["repositorio__image"]}
             />
             <h3 className = {styles["nombre-repositorio__title"]}>{name}</h3>
-            <span className = {styles["descripcion-repositorio__text"]}>{description}</span>
+            {
+                description &&
+                <span className = {styles["descripcion-repositorio__text"]}>{description}</span>
+            }
         </a>
     );
 }

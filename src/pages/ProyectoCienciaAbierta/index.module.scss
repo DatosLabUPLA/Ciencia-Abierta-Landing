@@ -1,0 +1,14 @@
+.proyecto-ciencia-abierta__container {
+    width: 100%;
+    row-gap: 15px;
+    display: flex;
+    padding-inline: 5%;
+    margin-block: 35px;
+    box-sizing: border-box;
+    flex-direction: column;
+    .seccion-proyecto-ciencia-abierta__title {
+        margin: 0;
+        font-size: 40px;
+        color: #0E9FE3;
+    }
+}
