@@ -1,43 +1,53 @@
-//Components
-import { useEffect, useState } from "react";
-import { IProyectoCarrusel } from "../interface";
+// Core Dependencies
+import { forwardRef } from "react";
+import { motion, usePresenceData } from "motion/react";
 
-//Styles
+// Constants
+import { carouselVariant } from "@/constants/animate-presence-variants";
+
+// Styles
 import styles from "./index.module.scss";
 
-const ProyectoItem = ({
-    name,
-    position,
-    imagePath,
-    description,
-    currentPosition
-}: IProyectoCarrusel) => {
-    const [transformStyles, setTransformStyles] = useState({
-        transform: "translateX(0)"
-    })
-    
-    useEffect(() => {
-        //OPTIMIZAR
-        const transformStyle = {
-            transform: "translateX(0)"
-        }
-
-        if (position !== currentPosition) {
-            transformStyle.transform = position < currentPosition ? "translateX(-120vw)" : "translateX(120vw)";
-        }
-
-        setTransformStyles(prevState => {
-            return {...prevState, ...transformStyle}
-        });
-    }, [currentPosition]);
-
-    return (
-        <div className = {styles["proyecto-main__container"]} style = {transformStyles}>
-            <p className = {styles["proyecto__text"]}>{description}</p>
-            <h1 className = {styles["proyecto__title"]}>{name}</h1>
-            <img className = {styles["proyecto__image"]} src = {imagePath}/>
-        </div>
-    );
+export interface IProyectoItem {
+    proyectoData: {
+        name: string;
+        href: string;
+        imagePath: string;
+        description: string;
+    }
 }
+
+const ProyectoItem = forwardRef<HTMLAnchorElement, IProyectoItem>(
+    (
+        { proyectoData }: IProyectoItem, 
+        ref
+    ) => {
+        const {
+            name,
+            href,
+            imagePath,
+            description
+        } = proyectoData;
+
+        const direction = usePresenceData();
+        
+        return (
+            <motion.a 
+                ref = {ref}
+                exit = "exit"
+                href = {href}
+                target = "_blank"
+                initial = "hidden"
+                animate = "visible"
+                variants = {carouselVariant(direction)}
+                className = {styles["proyecto-main__container"]}
+            >
+                <h1 className = {styles["proyecto__title"]}>{name}</h1>
+                <p className = {styles["proyecto__text"]}>{description}</p>
+                <img className = {styles["proyecto__image"]} src = {imagePath} />
+            </motion.a>
+        );
+    }
+);
 
 export default ProyectoItem;

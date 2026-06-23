@@ -10,7 +10,7 @@ interface ICustomButton {
     iconName?: string;
     iconLibrary?: string;
     customClassName?: string;
-    handleOnClick: () => void
+    handleOnClick: () => void;
 }
 
 const CustomButton = ({

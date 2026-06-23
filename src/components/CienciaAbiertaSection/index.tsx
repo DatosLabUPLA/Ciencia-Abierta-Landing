@@ -1,16 +1,23 @@
 // Core Dependencies
 import { motion } from "motion/react";
 
-// Components
-import { ICienciaAbiertaSection } from "./interface";
-
 // Constants
 import { slideUpVariant } from "@/constants/animate-presence-variants";
 
 // Styles
 import styles from "./index.module.scss";
 
-const CienciaAbiertaSection = ({title, description, children}: ICienciaAbiertaSection) => {
+interface ICienciaAbiertaSection {
+    title: string;
+    children: React.ReactNode;
+    description: string | null;
+};
+
+const CienciaAbiertaSection = ({
+    title, 
+    children,
+    description
+}: ICienciaAbiertaSection) => {
     return (
         <motion.div 
             initial = "hidden"

@@ -39,7 +39,6 @@ const Actividad = ({
                 {date}
             </span>
             <h3 className = {styles["actividad__title"]}>{name}</h3>
-
             <div className = {styles["actividad-descripcion__container"]}>
                 <Markdown>{shortDescription}</Markdown>
             </div>
@@ -48,6 +47,7 @@ const Actividad = ({
                 buttonText = "Saber más"
                 iconName = "IoLogOutOutline"
                 handleOnClick = {handleSelectPost}
+                customClassName = {styles["actividad__button"]}
             />
         </motion.div>
     );

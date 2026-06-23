@@ -1,5 +1,5 @@
 // Components
-import RecursosYHerramientasItem from "../RecursosYHerramientasItem";
+import DetalleRecursosItem from "../DetalleRecursos/DetalleRecursosItem";
 
 // Data
 import AlianzasData from "@/data/alianzas";
@@ -12,9 +12,12 @@ const Alianzas = () => {
         <div className = {styles["alianzas__container"]}>
             {
                 AlianzasData.map(
-                    (alianzaData) => (
-                        <RecursosYHerramientasItem 
-                            {...alianzaData}
+                    ({name, imagePath, externalURL}) => (
+                        <DetalleRecursosItem 
+                            key = {name}
+                            name = {name}
+                            imagePath = {imagePath}
+                            externalURL = {externalURL}
                         />
                     )
                 )

@@ -33,14 +33,14 @@
     .ciencia-abierta-sections__container {
         width: 100%;
         display: flex;
-        margin-top: 50px;
+        row-gap: 50px;
+        margin-block: 30px;
         padding-inline: 5%;
         flex-direction: column;
         box-sizing: border-box;
     }
     
     @media (max-width: 768px) {
-        padding-bottom: 50px;
         .ciencia-abierta-banner__container {
             height: 400px;
             padding-left: 0px;
@@ -53,7 +53,7 @@
             }
         }
         .ciencia-abierta-sections__container {
-            margin-top: 20px;
+            margin-block: 20px;
             padding-inline: 2%;
         }
     }

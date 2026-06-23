@@ -38,13 +38,14 @@ const SeccionesHome = () => {
     <>
       {
         Object.values(SECTIONS).map(
-          ({ key, Component }) => {
+          ({ key, Component }, index) => {
             const { title, description } = SectionData[key as keyof typeof SectionData];
 
             return (
               <CienciaAbiertaSection
                 title = {title}
                 description = {description}
+                key = {`home-section-${index}`}
               >
                 <Component />
               </CienciaAbiertaSection>

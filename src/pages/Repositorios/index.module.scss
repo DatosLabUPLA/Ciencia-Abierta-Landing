@@ -1,37 +1,8 @@
 .repositorios-main__container {
     width: 100%;
     display: flex;
-    font-size: 20px;
     padding-inline: 5%;
     margin-bottom: 35px;
     box-sizing: border-box;
     flex-direction: column;
-    .descripcion-repositorios__title, .ejemplos-repositorios__title {
-        color: #0E9FE3;
-        font-size: 50px;
-    }
-    .descripcion-repositorios__text {
-        margin: 0;
-        text-align: justify;
-    }
-    .ejemplos-repositorios__container {
-        width: 100%;
-        row-gap: 50px;
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    @media (max-width: 768px) {
-        .descripcion-repositorios__title, .ejemplos-repositorios__title {
-            font-size: 28px;
-            text-align: center;
-        }
-        .descripcion-repositorios__text {
-            font-size: 15px;
-        }
-        .ejemplos-repositorios__container { 
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
 }
