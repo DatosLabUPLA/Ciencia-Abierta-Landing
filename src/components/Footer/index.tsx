@@ -22,9 +22,14 @@ const Footer = () => {
             initial = "hidden"
             whileInView = "visible"
             variants = {delayChildrenVariant}
-            viewport = {{ once: true, amount: 0.8 }}
+            viewport = {{ once: true, amount: 0.2 }}
             className = {styles["footer-main__container"]}
         >
+            <motion.img 
+                src = {LogoFooterUpla} 
+                variants = {slideUpVariant}
+                className = {styles["footer__image"]} 
+            />
             <motion.div
                 variants = {slideUpVariant}
                 className = {styles["footer-content__container"]}
@@ -57,18 +62,20 @@ const Footer = () => {
                         RedesSocialesData.map(
                             ({
                                 href,
+                                name,
                                 iconName,
                                 iconLibrary
                             }) => (
                                 <a
+                                    key = {name}
                                     href = {href}
                                     target = "_blank"
                                     className = {styles["social-network__link"]}
                                 >
                                     <IconSymbol 
-                                        customClass = {styles["custom-link__icon"]}
                                         iconName = {iconName}
                                         iconLibrary = {iconLibrary}
+                                        customClass = {styles["custom-link__icon"]}
                                     />
                                 </a>
                             )
@@ -93,11 +100,7 @@ const Footer = () => {
                     ines.cienciaabierta@upla.cl
                 </a>
             </motion.div>
-            <motion.img 
-                src = {LogoFooterUpla} 
-                variants = {slideUpVariant}
-                className = {styles["footer__image"]} 
-            />
+
         </motion.div>
     );
 }

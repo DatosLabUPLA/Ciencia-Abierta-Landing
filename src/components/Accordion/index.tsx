@@ -43,7 +43,7 @@ const Accordion = ({
                 onClick = {() => handleOpenState(!isOpen)}
                 style = {{...closedStyles, ...openButtonStyle}}
             >
-                {sectionName}
+                <span className = {styles["accordion__text"]}>{sectionName}</span>
                 <IconSymbol
                     iconLibrary = "MdIcons"
                     iconName = "MdOutlineArrowForwardIos"

@@ -1,6 +1,12 @@
+// Core Dependencies
+import { motion } from "motion/react";
+
 // Components
 import Accordion from "../Accordion";
 import Markdown from "react-markdown";
+
+// Constants
+import { slideRightVariant } from "@/constants/animate-presence-variants";
 
 // Data
 import PreguntasFrecuentesData from "@/data/preguntasFrecuentes";
@@ -25,15 +31,23 @@ const PreguntasFrecuentes = () => {
             {
                 PreguntasFrecuentesData.map(
                     ({pregunta, respuesta}, index) => (
-                        <Accordion
+                        <motion.div 
+                            initial = "hidden"
                             key = {`faq-${index}`}
-                            sectionName = {pregunta}
-                            {...customAccordeonStyles}
+                            whileInView = "visible"
+                            variants = {slideRightVariant}
+                            viewport = {{ once: true, amount: 0.3 }}
+                            className = {styles["pregunta-frecuente__wrapper"]}
                         >
-                            <div className = {styles["pregunta-frecuente__container"]}>
-                                <Markdown>{respuesta}</Markdown>
-                            </div>
-                        </Accordion>
+                            <Accordion
+                                sectionName = {pregunta}
+                                {...customAccordeonStyles}
+                            >
+                                <div className = {styles["pregunta-frecuente__container"]}>
+                                    <Markdown>{respuesta}</Markdown>
+                                </div>
+                            </Accordion>
+                        </motion.div>
                     )
                 )
             }

@@ -44,12 +44,28 @@ export const slideUpVariant: Variants = {
     }
 }
 
+export const zoomInUpVariant: Variants = {
+    hidden: { scale: 0.0, opacity: 0 },
+    visible: {
+        scale: 1.0,
+        opacity: 1,
+        transition: {
+            duration: 1
+        }
+    }
+}
+
 export const dropInVariant: Variants = {
     hidden: { y: "-100vh", opacity: 0 },
     visible: { 
         y: "0", 
         opacity: 1,
-        transition: { duration: 0.5, type: "spring", damping: 25, stiffness: 250 } 
+        transition: {
+            damping: 25,
+            duration: 0.5, 
+            type: "spring", 
+            stiffness: 250
+        } 
     },
     exit: { y: "100vh", opacity: 0 },
 };
@@ -67,3 +83,24 @@ export const opacityVariant: Variants = {
          transition: { duration: 0.5 }
     }
 };
+
+export const carouselVariant = (direction: -1 | 1): Variants => ({
+    hidden: { 
+        opacity: 0,
+        x: direction * 100
+    },
+    visible: { 
+        x: 0,
+        opacity: 1,
+        transition: { 
+            delay: 0.2,
+            bounce: 0.4,
+            type: "spring",
+            visualDuration: 0.3
+        }
+    },
+    exit: {
+        opacity: 0,
+        x: direction * 2* -100
+    }
+});

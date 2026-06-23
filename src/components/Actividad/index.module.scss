@@ -1,13 +1,13 @@
 .actividad__container {
     width: 450px;
+    height: 250px;
     display: flex;
-    color: #707070;
     row-gap: 10px;
+    color: #707070;
     overflow: hidden;
     position: relative;
     border-radius: 5px;
     padding: 10px 15px;
-    height: fit-content;
     text-decoration: none;
     flex-direction: column;
     box-sizing: border-box;
@@ -39,7 +39,7 @@
             -webkit-box-orient: vertical;
         }
     }
-    &:hover {
-    
+    .actividad__button {
+        margin-top: auto;
     }
 }

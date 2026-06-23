@@ -12,7 +12,7 @@ import styles from "./index.module.scss";
 
 const Header = () => {
     const location = useLocation();
-    console.log(location.pathname)
+
     return (
         <header className = {styles["header-main__container"]}>
             <div className = {styles["header-logo__container"]}>

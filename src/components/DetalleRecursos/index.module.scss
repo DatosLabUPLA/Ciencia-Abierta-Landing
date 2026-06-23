@@ -1,0 +1,37 @@
+.detalle-recursos__container{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    .detalle-recursos__title {
+        color: #0E9FE3;
+        font-size: 50px;
+    }
+    .descripcion-detalle-recursos__text {
+        margin: 0;
+        text-align: justify;
+        p {
+            margin: 0;
+        }
+    }
+    .ejemplos-detalle-recursos__container {
+        gap: 50px;
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+  
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        .detalle-recursos__title {
+            font-size: 28px;
+            text-align: center;
+        }
+        .descripcion-detalle-recursos__text {
+            font-size: 15px;
+        }
+    }
+}

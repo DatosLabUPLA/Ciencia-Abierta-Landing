@@ -1,0 +1,15 @@
+.dot__button {
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #d4d4d4;
+    transition: all 0.3s ease-in-out;
+}
+
+.activated-dot__button {
+    width: 15px;
+    background-color: #0e9fe3;
+}

@@ -1,7 +1,7 @@
-//Components
+// Components
 import { ICreativeCommonsItem } from "./interface";
 
-//Styles
+// Styles
 import styles from "./index.module.scss";
 
 const CreativeCommonsItem = ({

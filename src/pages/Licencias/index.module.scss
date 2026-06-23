@@ -1,26 +1,10 @@
 .licencias-main__container {
     width: 100%;
     display: flex;
-    font-size: 20px;
     padding-inline: 5%;
     margin-bottom: 35px;
     box-sizing: border-box;
     flex-direction: column;
-    .descripcion-licencias__title, .ejemplos-licencias__title {
-        color: #0E9FE3;
-        font-size: 50px;
-    }
-    .descripcion-licencias__text {
-        margin: 0;
-        text-align: justify;
-    }
-    .ejemplos-licencias__container {
-        width: 100%;
-        row-gap: 50px;
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(3, 1fr);
-    }
     .creative-commons-licencias__title {
         color: #0E9FE3;
         font-size: 35px;
@@ -33,20 +17,10 @@
     }
 
     @media (max-width: 768px) {
-        .descripcion-licencias__title, .ejemplos-licencias__title {
-            font-size: 28px;
-            text-align: center;
-        }
         .creative-commons-licencias__title {
             font-size: 28px;
             text-align: center;
             margin-block: 25px;
-        }
-        .descripcion-licencias__text {
-            font-size: 15px;
-        }
-        .ejemplos-licencias__container { 
-            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
