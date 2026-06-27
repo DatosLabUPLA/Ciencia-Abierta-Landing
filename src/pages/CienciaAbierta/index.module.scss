@@ -8,26 +8,32 @@
         height: 700px;
         display: flex;
         color: white;
-        padding-left: 100px;
+        position: relative;
         flex-direction: column;
         box-sizing: border-box;
         justify-content: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to right,#1e1e1e, #00000000), url("@/assets/commons/banner_image.jpg");
-        .ciencia-abierta__title {
-            margin: 0;
-            font-size: 96px;
-            font-weight: bolder;
-        }
-        .ciencia-abierta__slogan {
-            margin: 0;
-            font-size: 22px;
-            font-weight: 400;
-            margin-block: 40px;
-        }
-        .ciencia-abierta-referencia_link {
-            font-size: 20px;
+        .ciencia-abierta__title-container {
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            row-gap: 20px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .ciencia-abierta__title {
+                margin: 0;
+                font-size: 96px;
+                font-weight: bolder;
+            }
+            .ciencia-abierta__slogan {
+                margin: 0;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            .ciencia-abierta-referencia_link {
+                font-size: 20px;
+            }
         }
     }
     .ciencia-abierta-sections__container {
@@ -45,11 +51,13 @@
             height: 400px;
             padding-left: 0px;
             align-items: center;
-            .ciencia-abierta__title {
-                font-size: 50px;
-            }
-            .ciencia-abierta__slogan {
-                font-size: 15px;
+            .ciencia-abierta__title-container {
+                .ciencia-abierta__title {
+                    font-size: 50px;
+                }
+                .ciencia-abierta__slogan {
+                    font-size: 15px;
+                }
             }
         }
         .ciencia-abierta-sections__container {

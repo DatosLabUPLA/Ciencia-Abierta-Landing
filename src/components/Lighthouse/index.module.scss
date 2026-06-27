@@ -1,0 +1,114 @@
+// ─── Lighthouse Scene ───────────────────────────────────────────────────────
+
+.lh-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #0a0e1a 0%, #0d1b3e 45%, #061028 100%);
+  overflow: hidden;
+  cursor: none;
+  border-radius: 12px;
+  user-select: none;
+}
+
+// ─── Stars ──────────────────────────────────────────────────────────────────
+
+.lh-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  &__star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: var(--op);
+    animation: lh-twinkle var(--dur) ease-in-out infinite alternate;
+  }
+}
+
+@keyframes lh-twinkle {
+  from { opacity: var(--op); }
+  to   { opacity: calc(var(--op) * 0.2); }
+}
+
+// ─── Beam SVG overlay ───────────────────────────────────────────────────────
+
+.lh-beam {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+// ─── Ocean ──────────────────────────────────────────────────────────────────
+
+
+
+@keyframes lh-wave {
+  from { transform: translateX(0); }
+  to   { transform: translateX(33.33%); }
+}
+
+// ─── Lighthouse wrapper ──────────────────────────────────────────────────────
+
+.lh-wrap {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+// ─── Lighthouse SVG ──────────────────────────────────────────────────────────
+
+.lh-svg {
+  display: block;
+
+  &__lamp {
+    filter: drop-shadow(0 0 6px #ffe050);
+    animation: lh-lamp-pulse 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes lh-lamp-pulse {
+  from {
+    filter: drop-shadow(0 0 5px #ffe050) drop-shadow(0 0 10px rgba(255, 224, 80, 0.6));
+  }
+  to {
+    filter: drop-shadow(0 0 10px #fff080) drop-shadow(0 0 22px rgba(255, 240, 80, 0.9));
+  }
+}
+
+// ─── Cursor dot ──────────────────────────────────────────────────────────────
+
+.lh-cursor {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  z-index: 20;
+}
+
+// ─── Hint label ──────────────────────────────────────────────────────────────
+
+.lh-hint {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(100, 150, 220, 0.55);
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 15;
+  font-family: sans-serif;
+}
