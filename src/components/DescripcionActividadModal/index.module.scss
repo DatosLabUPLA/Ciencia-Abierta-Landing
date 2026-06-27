@@ -9,7 +9,7 @@
     .descripcion-actividad-header__container {
         width: 100%;
         display: flex;
-        padding: 15px 90px;
+        padding: 15px 30px;
         box-sizing: border-box;
         justify-content: space-between;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -54,7 +54,7 @@
         row-gap: 15px;
         display: flex;
         overflow-y: auto;
-        padding: 15px 30px;
+        padding: 15px 90px;
         box-sizing: border-box;
         flex-direction: column;
         .descripcion-actividad__title {
