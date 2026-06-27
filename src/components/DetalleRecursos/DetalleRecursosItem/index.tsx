@@ -19,7 +19,7 @@ const DetalleRecursosItem = ({
     description 
 }: IDetalleRecursosItem) => {
     return (
-        <motion.a 
+        <motion.a // Eliminar y arreglar estilos
             target = "_blank" 
             initial = "hidden"
             href = {externalURL}

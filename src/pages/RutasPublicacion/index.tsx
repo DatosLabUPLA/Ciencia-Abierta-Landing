@@ -61,9 +61,9 @@ const RutasPublicacion = () => {
                                 <RutaPublicacionItem 
                                     name = {name}
                                     color = {color}
-                                    shortDescription = {shortDescription}
                                     description = {description}
                                     characteristics = {characteristics}
+                                    shortDescription = {shortDescription}
                                 />
                             </Accordion>
                         );

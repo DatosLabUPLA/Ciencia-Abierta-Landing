@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AnimatePresence } from "motion/react";
 
 // Components
+import DotButton from "../DotButton";
 import IconSymbol from "../IconSymbol";
 import ProyectoItem from "./ProyectoItem";
 
@@ -12,7 +13,6 @@ import proyectosData from "@/data/proyectos";
 
 // Styles
 import styles from "./index.module.scss";
-import DotButton from "../DotButton";
 
 const ProyectosCarrusel = () => {
     const [direction, setDirection] = useState<1 | -1>(1);

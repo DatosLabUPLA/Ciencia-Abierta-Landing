@@ -4,12 +4,12 @@
     max-height: 95%;
     min-height: 40%;
     cursor: default;
-    flex-direction: column;
+    flex-direction: column;     
     background-color: #FFFFFF;
     .descripcion-actividad-header__container {
         width: 100%;
         display: flex;
-        padding: 15px 30px;
+        padding: 15px 90px;
         box-sizing: border-box;
         justify-content: space-between;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -61,7 +61,6 @@
             margin: 0;
             font-size: 40px;
             color: #0099cc;
-            text-align: center;
         }
         p {
             margin: 0;

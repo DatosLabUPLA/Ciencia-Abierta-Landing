@@ -14,7 +14,16 @@ const RutaPublicacionItem = ({
             <h2 className = {styles["caracteristicas-ruta-item__title"]}>Principales características</h2>
             <ul className = {styles["caracteristicas-ruta-item__container"]}>
                 {
-                    characteristics.map((text: string, index: number) => <li key = {index} className = {styles["caracteristicas-ruta-item__text"]}>{text}</li>)
+                    characteristics.map(
+                        (text: string, index: number) => (
+                            <li 
+                                key = {index} 
+                                className = {styles["caracteristicas-ruta-item__text"]}
+                            >
+                                {text}
+                            </li>
+                        )
+                    )
                 }
             </ul>
         </div>

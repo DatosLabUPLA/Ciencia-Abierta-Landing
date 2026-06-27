@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 // Components
 import Accordion from "../Accordion";
 import Markdown from "react-markdown";
+import Lighthouse from "../Lighthouse";
 
 // Constants
 import { slideRightVariant } from "@/constants/animate-presence-variants";
@@ -51,6 +52,10 @@ const PreguntasFrecuentes = () => {
                     )
                 )
             }
+            {/* <div style={{position: "absolute", right: 0, width: "100vw", height:"100%", alignSelf: "center", justifySelf: "center"}}>
+
+                <Lighthouse />
+            </div> */}
         </div>
     );
 }
