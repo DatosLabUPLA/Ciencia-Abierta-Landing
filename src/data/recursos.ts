@@ -1,34 +1,40 @@
-// Images
-import LicenciasImage from "@/assets/recursos/licencias.png";
-import RepositoriosImage from "@/assets/recursos/repositorios.png";
-import DatosInvestigacionImage from "@/assets/recursos/datos.png";
-import SoftwareHerramientasImage from "@/assets/recursos/software.png";
-
 const RecursosData = [
     {
-        "name": "Repositorios Abiertos",
         "path": "/repositorios",
-        "imagePath": RepositoriosImage,
+        "nameColor": "#0453b5",
+        "iconLibrary": "FaIcons",
+        "iconName": "FaRegFolderOpen",
+        "name": "Repositorios Abiertos",
+        "iconBackgroundColor": "#dcf0ff",
         "description": "Plataformas para compartir artículos y publicaciones científicas en acceso abierto."
     },
     {
-        "name": "Datos de Investigación Abiertos",
+        "nameColor": "#b80049",
+        "iconLibrary": "TbIcons",
+        "iconName": "TbDatabase",
         "path": "/datos-investigacion",
-        "imagePath": DatosInvestigacionImage,
+        "iconBackgroundColor": "#ffe6ec",
+        "name": "Datos de Investigación Abiertos",
         "description": "Recursos para compartir y reutilizar datos científicos."
     },
     {
-        "name": "Software y Herramientas Abiertas",
+        "iconName": "IoMdCode",
+        "nameColor": "#8e3d00",
+        "iconLibrary": "IoIcons",
+        "iconBackgroundColor": "#ffeecc",
         "path": "/software-y-herramientas",
-        "imagePath": SoftwareHerramientasImage,
+        "name": "Software y Herramientas Abiertas",
         "description": "Programas de código abierto para la investigación."
     },
     {
-        "name": "Licencias Abiertas",
         "path": "/licencias",
-        "imagePath": LicenciasImage,
+        "iconName": "MdGavel",
+        "nameColor": "#006c4c",
+        "iconLibrary": "MdIcons",
+        "name": "Licencias Abiertas",
+        "iconBackgroundColor": "#d0f9e6",
         "description": "Herramientas para compartir contenido legalmente."
     }
-];
+] as const;
 
 export default RecursosData;

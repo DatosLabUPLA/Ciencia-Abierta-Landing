@@ -71,6 +71,6 @@ const RepositoriosData = [
         "externalURL": "https://zenodo.org/",
         "description": "Repositorio de datos y documentos científicos desarrollado por el CERN, que permite a investigadores compartir publicaciones, conjuntos de datos y software con acceso abierto y preservación a largo plazo."
     }
-];
+] as const;
 
 export default RepositoriosData;

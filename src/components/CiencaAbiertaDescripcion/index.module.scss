@@ -18,8 +18,13 @@
             font-size: 20px;
             text-align: justify;
         }
-        .ciencia-abierta-referencia_link {
-            font-size: 20px;
+        .ciencia-abierta-definicion__referencias {
+            height: 65px;
+            display: flex;
+            column-gap: 20px;
+            .ciencia-abierta-referencia__button {
+                font-size: 20px;
+            }
         }
     }
     .ciencia-abierta-definicion__image {
@@ -27,7 +32,7 @@
         height: 370px;
     }
 
-    @media (max-width: 768px) { 
+    @media (max-width: 800px) { 
         align-items: center;
         flex-direction: column;
         .ciencia-abierta-definicion__container {

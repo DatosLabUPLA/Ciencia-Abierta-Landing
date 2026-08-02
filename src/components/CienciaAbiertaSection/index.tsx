@@ -23,7 +23,7 @@ const CienciaAbiertaSection = ({
             initial = "hidden"
             whileInView = "visible"
             variants = {slideUpVariant}
-            viewport = {{ once: true, amount: 0.2 }}
+            viewport = {{ once: true, amount: 0.1 }}
             className = {styles["section-main__container"]}
         >
             <h1 className = {styles["section__title"]}>{title}</h1>

@@ -43,6 +43,6 @@ const CreativeCommonsData = [
         "description": "Permite compartir la obra, pero sin modificaciones y sin fines comerciales, dando atribución de autoría. Es considerada la licencia más restrictiva.",
         "example": "Un/a escritor/a publica su novela con <strong>CC BY-NC-ND</strong>. Esta podrá ser descargada, leída y distribuida exclusivamente de manera gratuita, pero nadie podrá modificarla, como crear una adaptación o traducirla."
     }
-];
+] as const;
 
 export default CreativeCommonsData;

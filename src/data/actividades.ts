@@ -45,6 +45,6 @@ const ActividadesData = [
         date: "20 de marzo, 2025",
         description: "En el marco de sus acciones de vinculación y fortalecimiento institucional, el **Proyecto InES Ciencia Abierta UPLA** participó en el lanzamiento de la **“Estrategia para la Implementación de una Política de Datos FAIR en Chile”**, iniciativa orientada a promover la generación de valor de los datos en el ecosistema público-académico.\n\nEl evento se desarrolló el **20 de marzo de 2025** en las oficinas del **Data Observatory**, en Eliodoro Yáñez 2990, Providencia, Región Metropolitana.\n\nEste hito, impulsado por diversas instituciones del ámbito científico y académico, busca avanzar en la adopción de principios **FAIR**: Findable, Accessible, Interoperable, Reusable.\n\nEstos principios son fundamentales para el desarrollo de la **Ciencia Abierta**, la investigación y la formulación de políticas públicas basadas en evidencia.\n\nLa participación en esta instancia refuerza el compromiso de la **UPLA** con la gestión responsable y abierta de los datos de investigación."
     }
-];
+] as const;
 
 export default ActividadesData;

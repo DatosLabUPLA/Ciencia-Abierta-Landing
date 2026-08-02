@@ -1,8 +1,13 @@
-//Components
-import { IRutasPublicacionItem } from "./interface";
-
-//Styles
+// Styles
 import styles from "./index.module.scss";
+
+interface IRutasPublicacionItem {
+    name: string;
+    color: string;
+    description: string;
+    shortDescription: string;
+    characteristics: string[]
+}
 
 const RutaPublicacionItem = ({
     description,

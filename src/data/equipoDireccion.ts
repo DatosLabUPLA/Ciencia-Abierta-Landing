@@ -11,6 +11,6 @@ const EquipoDireccion = [
         "fullName": "Dr. Miguel Guevara Albornoz",
         "socialNetworks": []
     }
-];
+] as const;
 
 export default EquipoDireccion;

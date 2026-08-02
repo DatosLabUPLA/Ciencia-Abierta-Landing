@@ -13,6 +13,6 @@ const AlianzasData = [
         "imagePath": DatosLabsImage,
         "externalURL": "https://datoslab.cl",
     }
-];
+] as const;
 
 export default AlianzasData;

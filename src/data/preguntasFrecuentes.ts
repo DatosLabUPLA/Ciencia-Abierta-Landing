@@ -83,6 +83,6 @@ const PreguntasFrecuentes = [
         "pregunta": "¿Cómo se relaciona la Ciencia Abierta con la ética en investigación?",
         "respuesta": "La Ciencia Abierta promueve prácticas éticas al fomentar la **transparencia, la reproducibilidad y el uso responsable de la información**, fortaleciendo la integridad científica."
     }
-];
+] as const;
 
 export default PreguntasFrecuentes;
