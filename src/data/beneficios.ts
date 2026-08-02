@@ -41,6 +41,6 @@ const BeneficiosData = [
             "Reduce costos en la investigación al evitar duplicaciones innecesarias."
         ]
     }
-];
+] as const;
 
 export default BeneficiosData;

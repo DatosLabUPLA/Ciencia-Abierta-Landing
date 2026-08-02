@@ -22,6 +22,6 @@ const LicenciasData = [
         "externalURL": "https://copyleft.org/guide/",
         "description": "Recurso educativo sobre el concepto de copyleft y su aplicación en licencias de software libre, como la GPL. Explica cómo garantizar que las obras derivadas mantengan la misma libertad de uso y modificación, promoviendo el acceso abierto y la colaboración."
     }
-];
+] as const;
 
 export default LicenciasData;

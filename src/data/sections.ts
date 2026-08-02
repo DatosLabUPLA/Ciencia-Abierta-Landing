@@ -19,6 +19,6 @@ const SectionData = {
         "title": "Ciencia Abierta en Universidad de Playa Ancha",
         "description": null
     }
-}
+} as const
 
 export default SectionData;

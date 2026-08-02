@@ -36,6 +36,6 @@ const DatosInvestigacionData = [
         "externalURL": "https://www.re3data.org/",
         "description": "Directorio global de repositorios de datos de investigación en diversas disciplinas. Proporciona información detallada sobre políticas de acceso, formatos y certificaciones, facilitando la localización de fuentes de datos confiables y reutilizables."
     }
-];
+] as const;
 
 export default DatosInvestigacionData;

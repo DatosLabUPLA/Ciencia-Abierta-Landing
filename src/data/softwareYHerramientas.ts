@@ -29,6 +29,6 @@ const SoftwareYHerramientasData = [
         "externalURL": "https://sfconservancy.org/",
         "description": "Organización que brinda apoyo legal, administrativo y financiero a proyectos de software libre y de código abierto. Facilita la sostenibilidad de iniciativas tecnológicas comunitarias, asegurando que operen bajo estructuras legales adecuadas."
     }
-];
+] as const;
 
 export default SoftwareYHerramientasData;

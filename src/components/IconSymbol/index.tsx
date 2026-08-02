@@ -1,4 +1,5 @@
 // Icons
+import * as GoIcons from "react-icons/go";
 import * as FaIcons from "react-icons/fa";
 import * as MdIcons from "react-icons/md";
 import * as IoIcons from "react-icons/io";
@@ -19,13 +20,15 @@ import * as Hi2Icons from "react-icons/hi2";
 // Styles
 import styles from "./index.module.scss";
 
-interface IIconSymbol {
+export interface IIconSymbol {
     iconName: string;
     iconLibrary: string;
     customClass?: string;
+    style?: React.CSSProperties;
 }
 
 type IconType = 
+    typeof GoIcons  |
     typeof FaIcons  | 
     typeof MdIcons  |
     typeof IoIcons  |
@@ -44,6 +47,7 @@ type IconType =
     typeof Hi2Icons;
 
 const IconMapping = new Map<string, IconType>([
+    ["GoIcons", GoIcons],
     ["FaIcons", FaIcons],
     ["IoIcons", IoIcons],
     ["MdIcons", MdIcons],
@@ -71,6 +75,7 @@ const handleIconSelection = (iconLibrary: string, iconName: string) => {
 }
 
 const IconSymbol = ({
+    style,
     iconName,
     customClass,
     iconLibrary
@@ -82,7 +87,7 @@ const IconSymbol = ({
     if (!Icon) return  null;
 
     return (
-        <Icon className = {iconClassName} />
+        <Icon className = {iconClassName} style = {style}/>
     );
 }
 

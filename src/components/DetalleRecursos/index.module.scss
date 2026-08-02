@@ -3,26 +3,26 @@
     display: flex;
     font-size: 20px;
     flex-direction: column;
-    box-sizing: border-box;
     .detalle-recursos__title {
         color: #0E9FE3;
         font-size: 50px;
     }
     .descripcion-detalle-recursos__text {
         margin: 0;
+        display: flex;
         text-align: justify;
+        flex-direction: column;
         p {
             margin: 0;
         }
     }
     .ejemplos-detalle-recursos__container {
-        gap: 50px;
         width: 100%;
         display: flex;
         padding: 10px;
+        row-gap: 30px;
         flex-wrap: wrap;
-  
-        justify-content: center;
+        justify-content: space-around;
     }
 
     @media (max-width: 768px) {

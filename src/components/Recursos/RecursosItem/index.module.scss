@@ -3,34 +3,41 @@
     height: 320px;
     row-gap: 15px;
     display: flex;
+    padding: 30px;
     color: #707070;
-    border-radius: 5px;
     text-align: center;
+    border-radius: 20px;
     align-items: center;
     text-decoration: none;
     flex-direction: column;
     box-sizing: border-box;
-    justify-content: center;
     transition: all 0.3s ease;
-    background-color: #F6FCFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    background-color: #FFFFFF;
+    border: 1px solid #8c8c8c4d;
     cursor: url("../../../assets/commons/custom_cursor.png"), pointer;
-    .recurso__image {
-        width: 130px;
-        height: 130px;
+    .recurso__title-icon {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
     }
     .recurso__title {
         margin: 0px;
-        font-size: 24px;
-        color: #0E9FE3;
-        font-weight: bold;
+        font-size: 22px;
     }
-    .recurso__text {
-        width: 90%;
+    .recurso__description {
+        flex: 1;
         margin: 0px;
-        font-size: 20px;
+        font-weight: 600;
+    }
+    .recurso__link-icon {
+        width: 30px;
+        height: 30px;
+
+        align-self: flex-end;
     }
     &:hover {
         transform: translateY(-10px);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
     }
 }
