@@ -3,6 +3,7 @@ import { Link } from "react-router";
 
 // Styles
 import styles from "./index.module.scss";
+import IconSymbol from "@/components/IconSymbol";
 
 interface IRutasItem {
     name: string;
@@ -20,7 +21,12 @@ const RutasItem = ({
             className = {styles["ruta-item-main__container"]} 
             style = {{"backgroundColor": backgroundColor}}
         >
-            {name}
+            <span className = {styles["ruta-item__name"]}>{name}</span>
+            <IconSymbol
+                iconLibrary = "Fa6Icons"
+                iconName = "FaArrowRightLong"
+                customClass = {styles["ruta-item__icon"]}
+            />
         </Link>
     );
 }

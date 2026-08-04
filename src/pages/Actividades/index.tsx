@@ -39,7 +39,7 @@ const Actividades = () => {
             {
                 ActividadesData.map(
                     (actividad) => (
-                        <Actividad
+                        <Actividad 
                             key = {actividad.name}
                             name = {actividad.name}
                             date = {actividad.date}

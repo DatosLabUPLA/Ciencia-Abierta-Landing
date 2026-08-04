@@ -64,6 +64,6 @@ const RutasPublicacionData = [
             "🚧 No garantiza preservación a largo plazo ni derechos abiertos."
         ]
     }
-];
+] as const;
 
 export default RutasPublicacionData;

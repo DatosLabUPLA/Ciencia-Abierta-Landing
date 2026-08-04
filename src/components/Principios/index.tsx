@@ -12,15 +12,25 @@ const Principios = () => {
         <div className = {styles["principios-main__container"]}>
             {
                 PrincipiosData.map(({
-                    name, 
-                    backgroundText, 
-                    backgroundColor
+                    name,
+                    iconName,
+                    nameColor,
+                    iconLibrary,
+                    description,
+                    backgroundColor,
+                    iconBackgroundColor
                 }) => 
                     <PrincipiosItem 
                         key = {name}
-                        name = {name} 
-                        backgroundText = {backgroundText} 
+                        name = {name}
+                        nameColor = {nameColor}
+                        description = {description}
                         backgroundColor = {backgroundColor}
+                        iconBackgroundColor = {iconBackgroundColor}
+                        icon = {{
+                            iconName: iconName,
+                            iconLibrary: iconLibrary
+                        }}
                     />
                 )
             }

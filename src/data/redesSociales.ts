@@ -23,6 +23,6 @@ const RedesSocialesData = [
         iconName: "FaYoutube",
         href: "https://www.youtube.com/user/comunicacionesupla"
     }
-];
+] as const;
 
 export default RedesSocialesData;

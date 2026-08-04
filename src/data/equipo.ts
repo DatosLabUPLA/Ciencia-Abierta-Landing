@@ -35,6 +35,6 @@ const MiembrosEquipo = [
         "fullName": "Natalia Muñoz",
         "socialNetworks": []
     }
-];
+] as const;
 
 export default MiembrosEquipo;

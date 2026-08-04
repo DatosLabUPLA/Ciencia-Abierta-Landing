@@ -13,17 +13,25 @@ const Recursos = () => {
             {
                 RecursosData.map(
                     ({
-                        name, 
-                        path, 
-                        imagePath, 
-                        description
+                        name,
+                        path,
+                        iconName,
+                        nameColor,
+                        description,
+                        iconLibrary,
+                        iconBackgroundColor
                     }) => (
                         <RecursosItem
                             key = {name}
                             path = {path}
                             name = {name}
-                            imagePath = {imagePath}
+                            nameColor = {nameColor}
                             description = {description}
+                            iconBackgroundColor = {iconBackgroundColor}
+                            icon = {{
+                                iconName: iconName,
+                                iconLibrary: iconLibrary
+                            }}
                         />
                     )
                 )
