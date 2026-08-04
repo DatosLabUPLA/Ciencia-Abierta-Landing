@@ -1,10 +1,12 @@
 .actividades__container {
-    gap: 30px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    row-gap: 30px;
+    display: grid;
+    max-width: 1600px;
     margin-block: 35px;
     padding-inline: 2%;
+    justify-self: center;
+    justify-items: center;
     box-sizing: border-box;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
