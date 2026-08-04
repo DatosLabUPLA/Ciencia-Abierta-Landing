@@ -9,4 +9,8 @@
     justify-items: center;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+
+    @media (max-width: 768px){
+       grid-template-columns: repeat(1, 1fr);
+    }
 }
