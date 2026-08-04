@@ -60,7 +60,7 @@ const DescripcionActividadModal = ({
                         <div className = {styles["descripcion-actividad__container"]}>             
                             <h1 className = {styles["descripcion-actividad__title"]}>{name}</h1>
                             <Markdown>{description}</Markdown>
-                            <img src = {imagePath ?? LogoImage}/>
+                            <img src = {imagePath ?? LogoImage} alt = "actividad-image" />
                         </div>
                     </div>
                 </ModalWrapper>

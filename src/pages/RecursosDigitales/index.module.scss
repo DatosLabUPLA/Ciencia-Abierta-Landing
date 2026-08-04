@@ -2,8 +2,10 @@
     width: 100%;
     row-gap: 15px;
     display: flex;
+    max-width: 1600px;
     padding-inline: 5%;
     margin-block: 35px;
+    justify-self: center;
     box-sizing: border-box;
     flex-direction: column;
     .seccion-recursos-digitales__title {

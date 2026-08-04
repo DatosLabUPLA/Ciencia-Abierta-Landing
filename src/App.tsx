@@ -12,7 +12,7 @@ const App = ({
     <div id = "main__container" className = {styles["main__container"]}>
       {children}
     </div>
-  )
+  );
 }
 
 export default App;

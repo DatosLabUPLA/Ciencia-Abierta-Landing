@@ -40,8 +40,10 @@ const Actividades = () => {
                 ActividadesData.map(
                     (actividad) => (
                         <Actividad 
+                            key = {actividad.name}
                             name = {actividad.name}
                             date = {actividad.date}
+                            imagePath = {actividad.imagePath}
                             description = {actividad.description}
                             handleSelectPost = {() => handleSelectPost(actividad)}
                         />
