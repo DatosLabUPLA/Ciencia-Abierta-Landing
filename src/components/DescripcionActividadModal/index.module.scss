@@ -68,4 +68,22 @@
             text-align: justify;
         }
     }
+
+    @media (max-width: 768px) {
+        width: 95%;
+        .descripcion-actividad-header__container {
+            padding-inline: 15px;
+        }
+        .descripcion-actividad__container {
+            padding-inline: 15px;
+            .descripcion-actividad__title {
+                font-size: 30px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+
+
+    }
 }

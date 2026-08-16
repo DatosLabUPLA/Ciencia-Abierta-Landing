@@ -13,8 +13,8 @@ const MiembrosEquipo = [
     },
     {
         "profileImage": null,
-        "position": "Coordinador",
         "fullName": "Ignacio Abarca",
+        "position": "Ingeniero informático",
         "socialNetworks": []
     },
     {

@@ -13,4 +13,10 @@
         font-size: 40px;
         color: #0E9FE3;
     }
+
+    @media (max-width: 768px) {
+        .seccion-proyecto-ciencia-abierta__title {
+            font-size: 30px;
+        }
+    }
 }

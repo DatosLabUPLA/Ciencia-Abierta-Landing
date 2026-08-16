@@ -27,13 +27,13 @@ const DescripcionProyecto = () => {
                 )
             }
             <div className = {styles["proyecto-politicas__container"]}>
-                <CustomLink
+                {/* <CustomLink
                     iconLibrary = "Io5Icons" 
                     iconName = "IoLogOutOutline"
                     linkText = "Política Ciencia Abierta UPLA"
                     customClassName = {styles["proyecto-politica__button"]}
                     href = "https://s3.amazonaws.com/documentos.anid.cl/estudios/Politica_acceso_a_informacion_cientifica_2022.pdf"
-                />
+                /> */}
                 <CustomLink
                     iconLibrary = "Io5Icons" 
                     linkText = "Política ANID"
