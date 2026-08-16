@@ -13,4 +13,10 @@
         font-size: 40px;
         color: #0E9FE3;
     }
+
+    @media (max-width: 768px) {
+        .seccion-recursos-digitales__title {
+            font-size: 30px;
+        }
+    }
 }

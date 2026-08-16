@@ -1,10 +1,10 @@
 // Core Dependencies
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
 // Components
 import Actividad from "@/components/Actividad";
-import DescripcionActividadModal from "@/components/DescripcionActividadModal";
+import DescripcionActividadModal, { IDescripcionActividad } from "@/components/DescripcionActividadModal";
 
 // Constants
 import { delayChildrenVariant } from "@/constants/animate-presence-variants";
@@ -16,17 +16,7 @@ import ActividadesData from "@/data/actividades";
 import styles from "./index.module.scss";
 
 const Actividades = () => {
-    const [selectedPost, setSelectedPost] = useState<any>();
-    const [displayPostDescription, setDisplayPostDescription] = useState<boolean>(false);
-
-    const handleDisplayPostState = (newState: boolean) => {
-        setDisplayPostDescription(newState);
-    }
-
-    const handleSelectPost = (actividadData: any) => {
-        setSelectedPost(actividadData);
-        handleDisplayPostState(true);
-    }
+    const [selectedPost, setSelectedPost] = useState<IDescripcionActividad>();
 
     return (
         <motion.div 
@@ -45,16 +35,20 @@ const Actividades = () => {
                             date = {actividad.date}
                             imagePath = {actividad.imagePath}
                             description = {actividad.description}
-                            handleSelectPost = {() => handleSelectPost(actividad)}
+                            handleSelectPost = {() => setSelectedPost(actividad)}
                         />
                     )
                 )
             }
-            <DescripcionActividadModal
-                {...selectedPost}
-                modalState = {displayPostDescription}
-                handleCloseModal = {() => handleDisplayPostState(false)}
-            />
+            <AnimatePresence>
+            {
+                selectedPost &&
+                <DescripcionActividadModal
+                    actividad = {selectedPost}
+                    handleCloseModal = {() => setSelectedPost(undefined)}
+                />
+            }
+            </AnimatePresence>
         </motion.div>
     );
 }
