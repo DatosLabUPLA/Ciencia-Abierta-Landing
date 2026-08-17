@@ -11,6 +11,7 @@ import { slideUpVariant, delayChildrenVariant } from "@/constants/animate-presen
 import RedesSocialesData from "@/data/redesSociales";
 
 // Images
+import LogoFooterAnid from "@/assets/repositorios/anid.png";
 import LogoFooterUpla from "@/assets/commons/logo_footer_upla.png";
 
 // Styles
@@ -25,11 +26,6 @@ const Footer = () => {
             viewport = {{ once: true, amount: 0.2 }}
             className = {styles["footer-main__container"]}
         >
-            <motion.img 
-                src = {LogoFooterUpla} 
-                variants = {slideUpVariant}
-                className = {styles["footer__image"]} 
-            />
             <motion.div
                 variants = {slideUpVariant}
                 className = {styles["footer-content__container"]}
@@ -93,14 +89,25 @@ const Footer = () => {
                     href = "mailto:ines.cienciaabierta@upla.cl"
                 >
                     <IconSymbol 
-                        customClass = {styles["custom-link__icon"]}
                         iconName = "IoMdMail"
                         iconLibrary = "IoIcons"
+                        customClass = {styles["custom-link__icon"]}
                     /> 
                     ines.cienciaabierta@upla.cl
                 </a>
             </motion.div>
-
+            <div className = {styles["footer__images"]}>
+                <motion.img 
+                    src = {LogoFooterUpla} 
+                    variants = {slideUpVariant}
+                    className = {styles["footer__image"]} 
+                />
+                <motion.img 
+                    src = {LogoFooterAnid} 
+                    variants = {slideUpVariant}
+                    className = {styles["footer__image"]} 
+                />      
+            </div>
         </motion.div>
     );
 }
